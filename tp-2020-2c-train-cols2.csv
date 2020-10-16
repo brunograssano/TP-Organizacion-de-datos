@@ -1,0 +1,802 @@
+tipo_de_sala,nombre,id_usuario,genero,edad,amigos,parientes,id_ticket,precio_ticket,fila,nombre_sede
+4d,Señor Camilo Pedro,117,hombre,73.5,0,0,59258;,1,,fiumark_quilmes
+4d,Señora Raquel Angelica,658,mujer,35.0,1,1,586:6;,2,,fiumark_quilmes
+normal,Señor Antonio Federico,794,hombre,,0,0,"RE""39822",3,,fiumark_chacarita
+4d,Señor Osvaldo Aureliano,455,hombre,,0,0,"C17""4:39",1,,fiumark_palermo
+4d,Señorita Rita Eudosia,173,mujer,4.0,1,1,569964,2,,fiumark_palermo
+normal,Señor Raimundo Longino,352,hombre,,0,0,335732,4,adelante,fiumark_palermo
+4d,Señor Celestino Wenceslao,177,hombre,,3,1,6355,3,,fiumark_palermo
+4d,Señor Carlos Gregorio,91,hombre,32.0,0,0,565498,1,,fiumark_palermo
+normal,Señor Carlos Roberto Francisco,225,hombre,41.0,1,0,3;;65,9,adelante,fiumark_palermo
+normal,Señora Lidia Barbarita,880,mujer,59.0,0,1,33989,9,adelante,fiumark_chacarita
+4d,Señor Roque Abel,526,hombre,43.5,0,0,589454,1,,fiumark_quilmes
+4d,Señor Ernesto Reginaldo,90,hombre,27.0,0,0,565497,1,,fiumark_palermo
+4d,Señor Paulino Virgilio,815,hombre,33.5,0,0,5866;;,1,,fiumark_palermo
+3d,Señora Bernarda Agapita,866,mujer,45.0,0,0,458:74,2,,fiumark_palermo
+4d,Señor Rubens Carlos Randy,510,hombre,29.0,0,0,3823,6,,fiumark_palermo
+4d,Señorita Anselma Josefina,230,mujer,,3,1,6355,3,,fiumark_palermo
+4d,Señor Alberto Jose Maria,471,hombre,,0,0,5457;4,1,,fiumark_palermo
+4d,Señorita Alicia Augusta,107,mujer,24.0,0,0,565342,1,,fiumark_palermo
+3d,Señor Héctor Fernando,239,hombre,22.0,0,0,4:887,2,,fiumark_palermo
+3d,Señora Ana Rosa Esilda,881,mujer,28.0,0,1,452655,3,,fiumark_palermo
+4d,Señor Nelson Tulio,96,hombre,,0,0,596;32,1,,fiumark_palermo
+4d,Señorita Sonia,11,mujer,7.0,1,1,"RR"";76;",2,medio,fiumark_palermo
+4d,Señor Gabriel Benerando,153,hombre,58.5,0,0,"C070""33428",1,,fiumark_palermo
+4d,Señora Rosalina Victoria,26,mujer,41.0,1,5,569299,4,,fiumark_palermo
+4d,Señor Silvestre Catalina,788,hombre,11.0,4,1,5:4874,3,,fiumark_quilmes
+4d,Señor Gregorio Nicanor,819,hombre,46.0,0,0,"E""9297",1,,fiumark_palermo
+3d,Señora Yolanda Anita,609,mujer,25.0,1,2,"UE1Rctku""4345",5,,fiumark_chacarita
+4d,Señor Lorenzo Segundo,126,hombre,15.0,1,0,4873,2,,fiumark_chacarita
+4d,Señorita Lucía Elba,768,mujer,33.5,0,0,586:72,1,,fiumark_quilmes
+normal,Señor Manuel Antonio Segundo,742,hombre,39.0,1,0,3;:99,8,adelante,fiumark_palermo
+normal,Señor Santiago Antonio,463,hombre,50.0,0,0,333542,4,adelante,fiumark_palermo
+4d,Señor Teofilo Edu,139,hombre,19.0,0,0,9756,1,,fiumark_palermo
+normal,Señor Balbino Humberto,156,hombre,54.0,0,1,"RE""397;9",6,,fiumark_chacarita
+4d,Señor Manuel Ciro Francisco Atilio,759,hombre,37.0,0,0,5854;6,1,,fiumark_palermo
+4d,Señor Alberto Anibal,350,hombre,45.0,0,0,5372::,1,,fiumark_palermo
+3d,Señora Carmen Greunisia,855,mujer,47.0,1,0,466474,3,,fiumark_palermo
+3d,Señorita Lydia Berta,527,mujer,53.0,0,0,"Y01E0""3647:",2,,fiumark_palermo
+normal,Señor Claudio Enrique Luis Pablo,823,hombre,41.0,0,0,3;;94,1,,fiumark_palermo
+3d,Señor Alberto De,828,hombre,4.0,0,2,"U0E01RCTKU""429;",4,,fiumark_chacarita
+normal,Señor Enrique Washington,749,hombre,22.0,1,0,335995,6,adelante,fiumark_palermo
+4d,Señorita Marta Nilda,247,mujer,28.0,0,0,569293,1,,fiumark_palermo
+4d,Señorita Julieta Rosalia,535,mujer,33.0,0,0,5372:6,1,,fiumark_palermo
+normal,Señora Rosa Gabriela,257,mujer,,0,0,"RE""397:7",8,,fiumark_chacarita
+normal,Señor Arturo Mario,699,hombre,52.0,1,1,39643,11,adelante,fiumark_chacarita
+3d,Señor Francisco Fidelmeno,706,hombre,42.0,0,0,472877,3,,fiumark_palermo
+4d,Señor Aurelio Emilio,598,hombre,52.0,0,0,NKPG,1,,fiumark_palermo
+3d,Señora Rosa Nicolasa,444,mujer,31.0,0,0,452656,2,,fiumark_palermo
+4d,Señor Vicente Humberto,829,hombre,,0,0,58944:,1,,fiumark_quilmes
+4d,Señor Rodolfo Pascual,128,hombre,27.0,0,0,"E""3958;",1,,fiumark_palermo
+4d,Señor Domingo Hipolito,753,hombre,36.0,0,0,5679:2,1,,fiumark_palermo
+3d,Señor Juan Osvaldo,79,hombre,3.83,0,2,46:95:,3,,fiumark_palermo
+normal,Señorita Amanda Haydeé,709,mujer,25.0,0,0,3359:3,15,,fiumark_palermo
+3d,Señor Daniel Demetrio,150,hombre,45.0,0,0,466532,2,,fiumark_palermo
+4d,Señor Justino Sipriano,490,hombre,12.0,1,1,"E0C0""59893",2,,fiumark_palermo
+normal,Señora Lucinda Imelda,300,mujer,53.0,0,1,"RE""3977:",25,adelante,fiumark_chacarita
+normal,Señora Carmen Osiris,458,mujer,,1,0,39686,6,adelante,fiumark_palermo
+4d,Señor Juan Otton,314,hombre,31.0,0,0,56;465,1,,fiumark_palermo
+4d,Señor Francisco Vicente,261,hombre,,0,0,5:6683,1,,fiumark_quilmes
+4d,Señor Julio Manuel,604,hombre,47.0,0,0,586733,1,,fiumark_palermo
+4d,Señor Manuel Octavio,612,hombre,,0,0,"UQVQP1Q0S0""5323527",1,,fiumark_palermo
+3d,Señora Teresa Rita  Flavia,438,mujer,27.0,2,3,4;328,2,,fiumark_palermo
+4d,Señorita Avelina Rosalia,410,mujer,,3,1,6355,3,,fiumark_palermo
+normal,Señorita Ramona Escobares,196,mujer,61.0,0,0,"RE""3978;",15,adelante,fiumark_chacarita
+4d,Señor Juan Dionisio,757,hombre,31.0,0,0,572264,1,,fiumark_palermo
+4d,Señor Rolando Adolfo,688,hombre,22.0,0,0,56;44:,1,,fiumark_palermo
+4d,Señor Mateo Roque,789,hombre,4.0,1,2,"E0C0""4537",3,,fiumark_palermo
+3d,Señor Sabino Jose,550,hombre,11.0,1,1,"E0C0""55334",4,,fiumark_palermo
+3d,Señora Nieves Elida,162,mujer,43.0,0,0,"E0C0""557;7",2,,fiumark_palermo
+4d,Señor Candido J,205,hombre,21.0,0,0,"C17""5762",1,,fiumark_palermo
+4d,Señor Carmelo Marcelo,515,hombre,27.0,0,0,56;42;,1,,fiumark_palermo
+normal,Señor Silvino,890,hombre,29.0,0,0,33358;,3,adelante,fiumark_chacarita
+4d,Señor Manuel Damaceno,874,hombre,50.0,0,0,567987,1,,fiumark_palermo
+4d,Señor Antonio Máximo,221,hombre,19.0,0,0,"UQVQP1QS""5;42:;",1,,fiumark_palermo
+3d,Señora Gloria Elia,517,mujer,37.0,0,0,"E0C0""56482",2,medio,fiumark_palermo
+4d,Señor Alberto Edio,761,hombre,,0,0,57:7:7,2,,fiumark_palermo
+4d,Señor Isidoro Lorenzo,38,hombre,24.0,0,0,"C0170""4374",1,,fiumark_palermo
+4d,Señor Agustin Ruperto,523,hombre,,0,0,4846,1,,fiumark_chacarita
+normal,Señor Adolfo Amaury,516,hombre,50.0,0,0,58;89,4,adelante,fiumark_palermo
+4d,Señor Rolando Adolfo Clemente,78,hombre,,0,0,596968,1,,fiumark_palermo
+4d,Señorita Eva Del Pilar,503,mujer,,0,0,552;2;,1,,fiumark_quilmes
+4d,Señor Carlos Teodorico,820,hombre,13.0,3,2,5692::,3,,fiumark_palermo
+4d,Señor Pedro Rosendo,716,hombre,22.0,0,0,56:346,1,medio,fiumark_palermo
+3d,Señora Rafaela Magdale,191,mujer,35.0,0,0,456826,2,,fiumark_palermo
+3d,Señor Luis Guadalupe,399,hombre,26.0,0,0,46649:,2,,fiumark_palermo
+4d,Señor Alberto Vicente,882,hombre,36.0,0,0,56;479,1,,fiumark_palermo
+normal,Señora Francisca Timotea,572,mujer,56.0,2,0,3398;,6,adelante,fiumark_palermo
+3d,Señorita Ema Jovanna,212,mujer,38.0,0,0,"H0E0E0""3574:",3,,fiumark_palermo
+3d,Señor Victorio José,250,hombre,57.0,1,0,466474,3,,fiumark_palermo
+normal,Señora Irma Mabel,578,mujer,42.0,1,0,35729,6,adelante,fiumark_palermo
+4d,Señorita America Palmira,853,mujer,12.0,1,1,489:,2,,fiumark_chacarita
+4d,Señor Enrique Heper,392,hombre,24.0,0,0,572256,1,,fiumark_palermo
+3d,Señor Florentino Agustin,278,hombre,,0,0,45;:75,1,,fiumark_palermo
+4d,Señora Micaela Dominga,280,mujer,38.0,1,1,"E0C0""4895",2,,fiumark_palermo
+4d,Señora Antonia Negilda,831,mujer,18.0,1,0,487;,2,,fiumark_chacarita
+4d,Señor Juan Victorio,170,hombre,31.0,0,0,3823,6,,fiumark_palermo
+3d,Señor Juan Jacobo Andres,620,hombre,29.0,0,0,5324:,2,,fiumark_palermo
+3d,Señor Santiago Marcelo,21,hombre,38.0,0,0,45;:87,3,,fiumark_palermo
+4d,Señor Valentin Segundo,95,hombre,62.0,0,0,586722,1,,fiumark_palermo
+4d,Señor Rolando Vicente,203,hombre,37.0,0,0,5323486,1,,fiumark_palermo
+4d,Señor Jorge Leon,282,hombre,31.0,0,0,569686,1,,fiumark_palermo
+normal,Señorita Celia Marta Teodolinda,137,mujer,22.0,0,2,33974,3,adelante,fiumark_palermo
+normal,Señor Inocencio Atanasio,660,hombre,61.0,0,2,57495,12,adelante,fiumark_chacarita
+4d,Señor Rolando Valentin,113,hombre,25.0,0,0,54688;,1,,fiumark_palermo
+normal,Señor Hipolito Isidoro,111,hombre,50.0,0,0,332687,6,adelante,fiumark_palermo
+4d,Señor Pablo Haido,92,hombre,23.0,0,0,569688,1,,fiumark_palermo
+4d,Señor Fortunato Anselmo,481,hombre,12.0,5,2,"EC""4366",5,,fiumark_palermo
+3d,Señora Irma Pascualina,707,mujer,48.0,0,0,4457;8,2,,fiumark_palermo
+4d,Señor Luis Anselmo,164,hombre,20.0,0,0,5372;5,1,,fiumark_palermo
+4d,Señor Valentin Luis,501,hombre,20.0,0,0,5372:8,1,,fiumark_palermo
+4d,Señor Desiderio Oscar,224,hombre,,0,0,56;456,1,,fiumark_palermo
+4d,Señor Benito Higinio,268,hombre,28.0,1,0,5692:5,1,,fiumark_palermo
+normal,Señor Belarmino Del Carmen,608,hombre,30.0,0,0,335:26,3,,fiumark_palermo
+normal,Señor Segundo José,488,hombre,61.0,0,0,33993,3,adelante,fiumark_chacarita
+3d,Señora Stella Mabel,67,mujer,32.0,0,0,"E0C0""4;5;7",2,medio,fiumark_palermo
+3d,Señor Juan Martin,123,hombre,35.5,1,0,459958,3,,fiumark_chacarita
+4d,Señorita Inocencia Irma,480,mujer,5.0,0,1,53234;:,2,,fiumark_palermo
+normal,Señorita Otilia Victoria,628,mujer,24.0,0,0,35724,8,adelante,fiumark_palermo
+4d,Señor Benicio Domingo Pedro,657,hombre,,0,0,56;445,1,,fiumark_palermo
+normal,Señor José Hermenegildo,125,hombre,57.0,0,1,574:3,8,adelante,fiumark_palermo
+3d,Señor Ovidio Osvaldo,344,hombre,28.0,0,0,466583,2,,fiumark_palermo
+3d,Señorita Antonia Silvina,347,mujer,43.0,0,0,5363:,2,,fiumark_palermo
+3d,Señorita Nemesia Jovina,721,mujer,9.0,0,1,46:949,4,,fiumark_palermo
+normal,Señora Juana Ceriaca,524,mujer,47.0,0,1,333583,6,adelante,fiumark_chacarita
+3d,Señor Americo Jose,146,hombre,22.0,1,1,"E0C0""55334",4,,fiumark_palermo
+4d,Señorita Felisa Eduarda,115,mujer,20.0,0,0,4849,2,,fiumark_chacarita
+4d,Señor Jorge Zacarias,356,hombre,31.0,0,0,5679:5,1,,fiumark_palermo
+4d,Señor Ernesto Cirilo,251,hombre,,0,0,584538,1,,fiumark_palermo
+4d,Señora Lorenza Adela,143,mujer,27.0,1,0,"UVQP1Q40""532349;",2,,fiumark_palermo
+normal,Señor Fortunato Saul,210,hombre,43.0,0,0,334499,4,adelante,fiumark_chacarita
+4d,Señor Eduardo Ovidio,272,hombre,28.0,0,0,NKPG,1,,fiumark_palermo
+4d,Señor Alonso Jose,825,hombre,5.0,4,1,53234;7,4,,fiumark_palermo
+4d,Señorita Ermelinda Carmen,185,mujer,7.0,0,2,537375,3,,fiumark_palermo
+4d,Señorita Andrea Maria Esther,331,mujer,,2,0,589448,3,,fiumark_quilmes
+4d,Señorita Edelmira del Carmen,148,mujer,12.0,2,2,"Y01E0""882:",4,,fiumark_palermo
+normal,Señora Dionisia Isabel,810,mujer,36.0,1,0,335:28,6,adelante,fiumark_palermo
+4d,Señorita Armanda Maria Magdalena,574,mujer,,0,0,36534,1,,fiumark_quilmes
+3d,Señor Eustaquio Antonio,595,hombre,40.0,1,0,"UE1CJ""4;259",3,,fiumark_palermo
+4d,Señor Mario Alberto,303,hombre,22.0,0,0,NKPG,1,,fiumark_palermo
+4d,Señor Ricardo Paulino,744,hombre,27.0,1,0,598788,2,,fiumark_palermo
+normal,Señor Juan Aquilino,97,hombre,74.0,0,0,"RE""39976",4,adelante,fiumark_chacarita
+4d,Señora Olga Cristina,9,mujer,30.0,0,2,569964,2,,fiumark_palermo
+4d,Señor Alfonso José,422,hombre,24.0,0,0,"C170""35254",1,,fiumark_quilmes
+normal,Señor Celso Hector,605,hombre,38.0,0,0,333648,3,,fiumark_chacarita
+4d,Señor Ernesto Evaristo,442,hombre,23.0,0,0,56798;,1,,fiumark_palermo
+4d,Señor Gregorio Nestor,693,hombre,,0,0,3823,6,,fiumark_palermo
+4d,Señor Manuel Primitivo,201,hombre,31.0,0,0,567992,1,,fiumark_palermo
+4d,Señorita Estela Corina,206,mujer,5.0,0,1,569276,2,medio,fiumark_palermo
+4d,Señor Juan De Dios Segundo,429,hombre,,0,0,586:73,1,,fiumark_quilmes
+3d,Señor Domingo Federico,386,hombre,21.0,0,0,"U0Q0E0""36:9;",8,,fiumark_palermo
+normal,Señorita Angela Ofelia,854,mujer,19.0,0,1,"RE""397;4",4,adelante,fiumark_palermo
+3d,Señor Antonio Oscar,192,hombre,22.0,0,0,4:646,2,,fiumark_palermo
+4d,Señor Juan Encarnacion,351,hombre,26.0,0,0,9489,1,,fiumark_palermo
+normal,Señorita Juana Pura,381,mujer,45.0,0,0,"RE""39979",23,,fiumark_chacarita
+4d,Señorita Nilda Emilce,397,mujer,34.0,0,0,572629,1,,fiumark_palermo
+4d,Señor Buenaventura Anacleto,665,hombre,23.0,1,0,"UVQP1Q""40""53234:7",1,,fiumark_palermo
+4d,Señor Mario Cesar,380,hombre,22.0,0,0,56928;,1,,fiumark_palermo
+normal,Señor David Edelmiro,648,hombre,59.0,0,0,35435,4,adelante,fiumark_chacarita
+4d,Señor Hugo Harold,498,hombre,,0,0,"E0C0""8434",2,,fiumark_palermo
+4d,Señorita Elsa Prudencia,542,mujer,12.0,4,2,5692:4,4,,fiumark_palermo
+3d,Señor Antonio Elvio,792,hombre,19.0,0,0,45;:87,3,,fiumark_palermo
+normal,Señor Walter Cipriano,858,hombre,54.0,0,0,335277,3,adelante,fiumark_palermo
+normal,Señorita Aurora Asuncion,731,mujer,32.0,0,0,46382,21,adelante,fiumark_palermo
+4d,Señora Francisca Vicenta,484,mujer,66.0,0,0,6356,1,,fiumark_palermo
+normal,Señor Carlos Teofilo,868,hombre,34.0,0,0,"RE""397;2",5,adelante,fiumark_palermo
+4d,Señor Emilio Miguel,765,hombre,19.0,0,0,569296,1,,fiumark_palermo
+4d,Señorita Aurelia Leonor,294,mujer,27.0,0,0,56;458,1,,fiumark_palermo
+normal,Señora Ramona Fermina,499,mujer,28.0,1,2,3359:3,15,adelante,fiumark_palermo
+normal,Señor Roberto Silvano,713,hombre,51.0,1,0,3;;;8,6,adelante,fiumark_palermo
+4d,Señora Anita Anastasia,416,mujer,,0,0,5652;7,1,,fiumark_palermo
+normal,Señorita Mercedes Yolanda,413,mujer,36.0,1,0,3;;4:,9,adelante,fiumark_quilmes
+3d,Señora Constancia Rosario,313,mujer,29.0,1,1,472873,3,,fiumark_palermo
+4d,Señor Marcial Honorio,302,hombre,,2,0,589448,3,,fiumark_quilmes
+normal,Señorita Dominga Martina,298,mujer,5.0,1,2,3359:3,15,adelante,fiumark_palermo
+4d,Señor Teofilo Del Carmen,878,hombre,22.0,0,0,56;434,1,,fiumark_palermo
+4d,Señor Amado Francisco,402,hombre,29.0,0,0,563:48,1,,fiumark_palermo
+4d,Señorita Petrona Argelina,290,mujer,25.0,0,0,592595,1,,fiumark_quilmes
+4d,Señorita Alicia Benita,369,mujer,,0,0,36535,1,,fiumark_quilmes
+3d,Señorita Blanca Selva,447,mujer,16.0,0,1,472866,2,,fiumark_palermo
+4d,Señor Ulises Miguel,852,hombre,77.0,0,0,569282,1,,fiumark_palermo
+4d,Señor Lucas Antonio,697,hombre,47.0,0,0,5857;4,1,,fiumark_palermo
+4d,Señor Eleuterio Antenor,322,hombre,30.0,0,0,56;43;,1,,fiumark_palermo
+4d,Señorita Olga Maria Rita,420,mujer,13.0,0,2,567995,3,,fiumark_palermo
+4d,Señorita Teresa Lola,403,mujer,24.0,1,0,6359,1,,fiumark_palermo
+4d,Señor Horacio Onofre,30,hombre,,0,0,56;438,1,,fiumark_palermo
+4d,Señor Manuel Fèlix,722,hombre,20.0,1,0,57226:,1,,fiumark_palermo
+4d,Señora Benigna Clotilde,368,mujer,,0,0,4848,1,,fiumark_chacarita
+4d,Señor Pedro Dionisio,27,hombre,,0,0,4853,1,,fiumark_chacarita
+3d,Señor Aurelio Humberto,724,hombre,53.0,0,0,472865,2,,fiumark_palermo
+normal,Señor Avelino Felix,513,hombre,39.0,0,0,"RE""39695",3,adelante,fiumark_palermo
+4d,Señor Alfonso Pablo,630,hombre,,0,0,556;34,1,,fiumark_quilmes
+4d,Señor Ernesto Cesareo,614,hombre,,0,0,592599,1,,fiumark_quilmes
+4d,Señor Enrique,777,hombre,,0,0,5:5343,1,medio,fiumark_quilmes
+4d,Señor Armando Abraham,834,hombre,26.0,0,0,56968:,1,,fiumark_palermo
+4d,Señor Ernesto Gustavo,569,hombre,,0,0,48:8,1,,fiumark_chacarita
+4d,Señor Raúl Arnol,520,hombre,35.0,0,0,56;464,1,,fiumark_palermo
+4d,Señorita Rafaela Euladia,29,mujer,,0,0,552;7;,1,,fiumark_quilmes
+4d,Señor Manuel Silvano,154,hombre,43.5,0,2,"C170"":73",2,,fiumark_palermo
+4d,Señor Evaristo Juan,279,hombre,10.0,4,1,5:4874,3,,fiumark_quilmes
+4d,Señorita Julia Domiciana,382,mujer,4.0,0,2,4875,2,,fiumark_chacarita
+4d,Señor Ignacio Sixto,478,hombre,32.0,1,0,5682,1,,fiumark_palermo
+normal,Señorita Elsa Genoveva,436,mujer,17.0,1,2,335982,12,adelante,fiumark_palermo
+3d,Señor Conrado Rogelio,583,hombre,57.0,0,0,4:625,3,,fiumark_palermo
+4d,Señora Helena Dora,86,mujer,36.0,3,0,532349:,2,,fiumark_palermo
+4d,Señor Elidio Santiago,379,hombre,23.0,0,0,486:,1,,fiumark_chacarita
+4d,Señorita Lidia Pascuala,316,mujer,29.0,0,0,569692,1,,fiumark_palermo
+normal,Señor Rolando Noe,264,hombre,43.0,0,0,33427;,1,adelante,fiumark_palermo
+4d,Señor Ovidio Valentin,871,hombre,29.0,0,0,56;46:,1,,fiumark_palermo
+normal,Señorita Elva Marcelina,12,mujer,61.0,0,0,3359:5,3,adelante,fiumark_palermo
+normal,Señorita Ernesta Eusebia,690,mujer,18.0,0,1,46382,21,adelante,fiumark_palermo
+normal,Señor Juan Dalmiro,494,hombre,74.0,0,0,"RE""3982;",5,,fiumark_chacarita
+normal,Señora Elsa Rosalia,582,mujer,42.0,1,1,39643,11,adelante,fiumark_chacarita
+normal,Señorita Elisa Ernestina,270,mujer,38.0,0,0,"RE""39982",14,adelante,fiumark_palermo
+3d,Señora Rosa Eliana,775,mujer,57.0,1,3,4;327,3,,fiumark_palermo
+4d,Señorita Sara Bertilda,565,mujer,,0,0,"UQVQP1Q0S0""5;42:9",1,,fiumark_palermo
+4d,Señor Arsenio Pilo,365,hombre,,1,0,592587,2,,fiumark_quilmes
+4d,Señorita Jeronima Herminia,110,mujer,,1,0,593332,3,,fiumark_quilmes
+4d,Señor Jacinto Pedro,662,hombre,43.0,0,0,4845,1,,fiumark_chacarita
+4d,Señor Ricardo Antonio,412,hombre,,0,0,5;6362,1,,fiumark_quilmes
+3d,Señor Hugo Evaristo,587,hombre,50.0,0,0,459787,2,,fiumark_palermo
+4d,Señorita Ramona Clelia,814,mujer,9.0,4,2,5692:4,4,,fiumark_palermo
+3d,Señor Bruno Alejandro,266,hombre,39.0,0,0,"E0C0""3946:",2,,fiumark_palermo
+4d,Señor Segundo Pedro,593,hombre,50.0,0,0,"C17""5;24",1,,fiumark_palermo
+4d,Señora Rosa Macrina,856,mujer,21.0,0,1,5;42;3,1,,fiumark_palermo
+normal,Señor Lino,24,hombre,31.0,0,0,3359::,4,adelante,fiumark_palermo
+4d,Señor Marcelo Adolfo,108,hombre,,0,0,534;;3,1,,fiumark_palermo
+4d,Señorita Florencia Jesus,883,mujer,25.0,0,0,9774,2,,fiumark_palermo
+3d,Señorita Irma Jacinta,718,mujer,30.0,0,0,5643:,2,adelante,fiumark_palermo
+normal,Señor Osvaldo Nicolas,634,hombre,,0,0,334274,1,,fiumark_palermo
+3d,Señor Abel Francisco,315,hombre,46.0,1,1,"H0E0E0""3574;",3,,fiumark_palermo
+4d,Señor Gilberto Abelardo,180,hombre,39.0,0,0,NKPG,1,,fiumark_palermo
+4d,Señor Juan Jorge Alberto,158,hombre,33.0,0,0,"UQVQP1QS""5;42;2",1,,fiumark_palermo
+4d,Señorita Estela Sofia,83,mujer,,0,0,552;54,1,,fiumark_quilmes
+4d,Señorita Elena Violeta,502,mujer,24.0,0,0,586:68,1,,fiumark_quilmes
+normal,Señora Fermina Eugenia,642,mujer,27.0,0,0,"RE""39699",7,adelante,fiumark_chacarita
+4d,Señor Americo Rinaldo,223,hombre,54.0,0,0,43662,1,,fiumark_palermo
+4d,Señor Domingo Reynaldo,81,hombre,25.0,0,0,567989,1,,fiumark_palermo
+4d,Señorita Magdalena Del Carmen,778,mujer,8.0,0,0,586738,2,,fiumark_palermo
+4d,Señor Clemente Hugo,286,hombre,36.0,0,0,56;45;,1,,fiumark_chacarita
+3d,Señor Armando Hector,696,hombre,55.0,0,0,46:953,2,,fiumark_palermo
+normal,Señor Celestino Miguel,797,mujer,52.0,0,0,39687,3,adelante,fiumark_palermo
+3d,Señor Julio Gustavo,135,hombre,28.0,0,0,"E0C0""4;39:",2,,fiumark_palermo
+4d,Señor Augusto Isidoro,641,hombre,23.0,0,0,572272,1,,fiumark_palermo
+4d,Señor Leonardo Ramon,533,hombre,20.0,1,1,48;2,1,,fiumark_chacarita
+4d,Señor Fernando Lorenzo Martin,355,hombre,,0,0,4869,1,,fiumark_chacarita
+3d,Señor Marcos German,293,hombre,39.0,0,0,"UE1Rctku""4385",2,adelante,fiumark_chacarita
+normal,Señora Olga Rina,766,mujer,54.0,1,0,35724,8,adelante,fiumark_palermo
+normal,Señorita Margarita Betsabe,311,mujer,27.0,0,0,33989,9,adelante,fiumark_chacarita
+4d,Señor Abel Omar,644,hombre,,0,0,3823,6,,fiumark_palermo
+4d,Señorita Irma Faustina,808,mujer,21.0,0,0,5692:9,1,,fiumark_palermo
+4d,Señor Salvador Ramón,621,hombre,30.0,1,0,487;,2,,fiumark_chacarita
+4d,Señor Horacio Amado,462,hombre,37.0,0,0,586728,1,,fiumark_palermo
+3d,Señor Osvaldo Valerio,667,hombre,28.0,0,0,4568:8,2,,fiumark_palermo
+4d,Señor Emilio Nemesio,736,hombre,31.5,0,0,76858,2,,fiumark_palermo
+4d,Señor Abelardo Sadid,779,hombre,,0,0,58:87,1,,fiumark_quilmes
+3d,Señor Lino Mercedes,842,hombre,19.0,0,0,"U0Q01R0R0""5",2,,fiumark_palermo
+4d,Señorita Victoria Emma,781,mujer,16.0,0,0,48:9,1,,fiumark_chacarita
+3d,Señorita Consuelo Adelia,616,mujer,27.0,1,2,442:67,7,,fiumark_palermo
+normal,Señor Pio,175,hombre,59.0,0,0,39986,3,adelante,fiumark_chacarita
+3d,Señor Arturo Serafin,419,hombre,33.0,0,0,4:44:,2,,fiumark_palermo
+4d,Señor Gregorio Julio,491,hombre,,1,0,87526,2,,fiumark_palermo
+4d,Señor Faustino Alfredo,383,hombre,35.0,0,0,"UVQP1Q""40""53234;5",1,,fiumark_palermo
+4d,Señor Gabriel Gregorio,827,hombre,,0,0,3823,6,,fiumark_palermo
+4d,Señora Susana Beatriz Maria,432,mujer,,1,0,598786,2,,fiumark_palermo
+3d,Señorita Carmen Ondina,867,mujer,30.0,1,0,"UE1RCTKU""436;",2,,fiumark_chacarita
+normal,Señora Olga Leolinda,152,mujer,25.0,1,0,335998,7,adelante,fiumark_palermo
+4d,Señor Ceferino Antonio,623,hombre,23.0,1,1,4875,2,,fiumark_chacarita
+normal,Señora Benigna Elena,701,mujer,21.0,1,0,"RE""39979",23,adelante,fiumark_chacarita
+4d,Señor José Camilo,122,hombre,,0,0,"C60""76732",1,,fiumark_palermo
+normal,Señor Luis Alejandro,65,hombre,,0,0,"RE""39827",3,,fiumark_chacarita
+4d,Señor Esteban Jose,879,hombre,,0,0,56;439,1,,fiumark_palermo
+4d,Señor Celestino Carlos,885,hombre,28.0,0,0,"UQVQP1QS""5;4298",1,,fiumark_palermo
+normal,Señor Adalberto Rene,546,hombre,67.0,0,0,8;5,3,,fiumark_palermo
+4d,Señor Argentino Marcelo,281,hombre,68.0,0,0,55865;,1,,fiumark_quilmes
+4d,Señor Octavio Sixto,772,hombre,51.0,0,0,572269,1,,fiumark_palermo
+4d,Señor Alberto Marcial,770,hombre,35.0,0,0,:693,1,,fiumark_palermo
+4d,Señor Nelson Romulo,771,hombre,27.0,0,0,5679:3,1,,fiumark_palermo
+4d,Señorita Claudia Elena,889,mujer,,1,2,"Y01E0""8829",3,,fiumark_palermo
+3d,Señor Nestor Serviliano,398,hombre,49.0,0,0,4:625,3,,fiumark_palermo
+4d,Señor Walter Juan,590,hombre,,0,0,"C0170""5457",1,,fiumark_palermo
+4d,Señor Julio Gerardo,109,hombre,41.0,0,0,56;46;,1,,fiumark_palermo
+4d,Señorita Josefa Catalina,181,mujer,,8,2,"EC0""4565",7,,fiumark_palermo
+4d,Señora Reina Benita,141,mujer,,0,2,489:,2,,fiumark_chacarita
+4d,Señorita Ernestina Lidia,449,mujer,8.0,2,1,4888,2,,fiumark_chacarita
+3d,Señora Amalia Francisca,260,mujer,53.0,0,1,452655,3,,fiumark_palermo
+3d,Señor Antonio De La Cruz,686,hombre,28.0,1,2,"UE1Rctku""4345",5,,fiumark_chacarita
+normal,Señor Edmundo Godofredo,439,hombre,67.0,1,4,3;;72,26,adelante,fiumark_palermo
+4d,Señorita Anselma Dina,555,mujer,25.0,0,0,5692:7,1,,fiumark_palermo
+3d,Señor Marcelo Alberto Gabriel,222,hombre,30.0,0,0,442589,2,,fiumark_palermo
+normal,Señora Gloria Renee,376,mujer,,1,0,"RE""39826",9,,fiumark_chacarita
+normal,Señor Americo Santiago,371,hombre,28.0,1,0,33987,6,adelante,fiumark_chacarita
+4d,Señorita Rosa Ventura,265,mujer,,0,0,5:486;,1,,fiumark_quilmes
+4d,Señor Rodolfo Dionisio,75,hombre,35.0,0,0,3823,6,,fiumark_palermo
+4d,Señor Juan Manuel Jorge,575,hombre,19.0,0,0,"C160""427:;",1,,fiumark_palermo
+normal,Señor Luis Rufino,378,hombre,30.0,0,2,335725,21,adelante,fiumark_chacarita
+4d,Señor Eloy Ricardo,786,hombre,28.0,0,0,596::9,1,,fiumark_palermo
+4d,Señor Florindo Román,739,hombre,,0,0,56;423,1,,fiumark_palermo
+normal,Señora Dionisia Olga,711,mujer,27.0,0,0,"RE""396:4",5,adelante,fiumark_chacarita
+3d,Señor Ernesto Horacio,627,hombre,60.0,0,0,43;755,2,,fiumark_quilmes
+4d,Señor Antonio Narnaciso,226,hombre,25.0,0,0,"RR""656:",1,,fiumark_palermo
+4d,Señor Pantaleon Mario,105,hombre,40.0,2,0,5323498,1,,fiumark_palermo
+normal,Señorita Mercedes Cruz,717,mujer,41.0,0,0,"RE""39979",23,adelante,fiumark_chacarita
+4d,Señorita Avelina Elena,613,mujer,,1,0,589452,2,,fiumark_quilmes
+4d,Señor Luis Hernan,51,hombre,10.0,4,1,53234;7,4,,fiumark_palermo
+normal,Señor Rodolfo Celedonio,55,hombre,68.0,0,1,33572;,7,adelante,fiumark_chacarita
+3d,Señor Jeronimo Guillermo,345,hombre,39.0,0,0,44;458,2,,fiumark_palermo
+normal,Señor Segundo David,453,hombre,33.0,0,0,335273,3,adelante,fiumark_chacarita
+normal,Señor Valentin Arturo,140,hombre,27.0,0,0,"RE""397;5",8,adelante,fiumark_chacarita
+normal,Señora Matilde Josefina Del Valle,592,mujer,55.0,1,0,58;69,8,adelante,fiumark_chacarita
+4d,Señorita Magdalena Rufina,114,mujer,23.0,1,0,6358,1,,fiumark_palermo
+4d,Señor Rufino Antonio,295,hombre,27.0,0,0,56;455,1,,fiumark_palermo
+4d,Señorita Otilia Otilia,217,mujer,30.0,0,0,"UVQP1Q40""53234:5",1,,fiumark_palermo
+3d,Señor Hipolito,477,hombre,37.0,1,0,53249,3,,fiumark_palermo
+3d,Señor Eulogio Atilio,659,hombre,26.0,0,0,4;973,2,,fiumark_palermo
+3d,Señor Julio Arcadio,464,hombre,51.0,0,0,456582,2,,fiumark_palermo
+3d,Señor Hipolito Felipe,218,hombre,45.0,1,0,465:69,3,,fiumark_palermo
+3d,Señorita Regina Birginia,200,mujer,27.0,0,0,46:969,2,,fiumark_palermo
+3d,Señor Eduardo Jacinto,73,hombre,24.0,0,0,"U0Q0E0""36:9;",8,,fiumark_palermo
+4d,Señor Antonio Franco,88,hombre,,0,0,"UQVQP1QS""5;42:8",1,,fiumark_palermo
+3d,Señor Leopoldo Milton,734,hombre,26.0,0,0,4:647,2,,fiumark_palermo
+4d,Señora Prudencia Rosa,168,mujer,48.0,1,4,5692::,3,,fiumark_palermo
+3d,Señor Anacleto Ignacio,34,hombre,69.0,0,0,"E0C0""4679;",2,,fiumark_palermo
+4d,Señor Roberto Claudio,130,hombre,48.0,0,0,569283,1,,fiumark_palermo
+3d,Señor José Héctor,118,hombre,32.0,1,0,3388:,3,,fiumark_palermo
+4d,Señorita Celia Eglantine,45,mujer,22.0,0,0,552;7:,1,,fiumark_quilmes
+normal,Señora Silvia Herminia,670,mujer,,1,0,3;;;8,6,adelante,fiumark_palermo
+4d,Señor Jorge Angel Alberto,483,hombre,53.0,0,0,"C17""57;6",1,,fiumark_palermo
+4d,Señor Marcelo Proto,353,hombre,18.0,1,1,48;7,1,,fiumark_chacarita
+3d,Señor Luis Remo,685,hombre,63.0,1,1,4;972,4,,fiumark_palermo
+4d,Señor Osvaldo Ireneo,37,hombre,,0,0,4899,1,,fiumark_chacarita
+4d,Señor Segundo Hilario,64,hombre,7.0,3,2,5692::,3,,fiumark_palermo
+4d,Señorita Lola Gertrudis,69,mujer,20.0,4,2,53234:3,1,,fiumark_palermo
+normal,Señora Laurentina Celva,764,mujer,39.0,1,2,335982,12,adelante,fiumark_palermo
+3d,Señora Delia Angela,417,mujer,37.0,1,1,4:442,4,,fiumark_palermo
+normal,Señora Antonia Alicia,821,mujer,55.0,1,1,3496;,10,adelante,fiumark_palermo
+4d,Señor David Prudencio,208,hombre,29.0,0,0,48;;,2,,fiumark_chacarita
+4d,Señor Florencio Federico,511,hombre,32.0,0,0,5:4873,1,,fiumark_quilmes
+4d,Señora Blanca Cesar,859,mujer,27.0,0,3,4888,2,,fiumark_chacarita
+4d,Señora Delia Lyliam,252,mujer,32.0,1,1,569276,2,medio,fiumark_palermo
+4d,Señor Adolfo Esteban,407,hombre,54.0,0,0,569286,1,,fiumark_palermo
+normal,Señora Pilar Matilde,4,mujer,38.0,1,0,335:25,6,adelante,fiumark_palermo
+normal,Señor Esteban Domingo,476,hombre,,0,0,332687,6,adelante,fiumark_palermo
+4d,Señor Manuel Fernando,127,hombre,,0,0,592594,1,,fiumark_quilmes
+4d,Señor José de Jesús,469,hombre,,0,0,5842;,1,,fiumark_quilmes
+4d,Señor Esteban Reyes,677,hombre,27.5,0,0,564:48,1,,fiumark_palermo
+normal,Señorita Margarita Juana,521,mujer,33.0,0,0,3496;,10,adelante,fiumark_palermo
+3d,Señor Vicente Justiniano,729,hombre,28.0,1,0,458:75,3,,fiumark_palermo
+4d,Señor Bernardo Miguel,1,hombre,25.0,1,0,"C17""43393",1,,fiumark_palermo
+normal,Señorita Dionisia Edith,541,mujer,39.0,0,2,"YG1R""7957",7,adelante,fiumark_palermo
+3d,Señor Roque Reminsio,563,hombre,31.0,0,0,43:84;,2,,fiumark_palermo
+4d,Señora Delfina Clelia,824,mujer,30.0,0,1,5;42;8,2,adelante,fiumark_palermo
+normal,Señor Segundo Del Carmen,28,hombre,22.0,3,2,3;;72,26,adelante,fiumark_palermo
+4d,Señorita Irma Filiberta,876,mujer,18.0,0,0,4889,1,,fiumark_chacarita
+3d,Señor Francisco Aureliano,638,hombre,34.0,1,1,"E0C0""53;43",3,,fiumark_palermo
+4d,Señor Blas Norberto,366,hombre,33.0,0,0,"E""9298",1,,fiumark_palermo
+normal,Señorita Hilaria Francisca,330,mujer,19.0,0,1,333583,6,adelante,fiumark_chacarita
+4d,Señor Hipolito Pastor,826,hombre,,0,0,58:545,1,,fiumark_quilmes
+4d,Señor Anselmo Osvaldo,387,hombre,4.0,5,2,"EC""4366",5,,fiumark_palermo
+3d,Señor Justo Sixto,674,hombre,34.0,0,0,466492,2,,fiumark_palermo
+4d,Señor Roberto Jaime,617,hombre,37.0,1,1,5692:2,2,,fiumark_palermo
+4d,Señor Alfonso Arcides,799,hombre,33.0,0,0,48:7,1,,fiumark_chacarita
+4d,Señor Humberto Sixto,409,hombre,24.0,0,0,534;;4,1,,fiumark_palermo
+3d,Señora Iluminada del Valle,802,mujer,34.0,1,1,"E0C0""53;43",3,,fiumark_palermo
+4d,Señor Ricardo Esteban,585,hombre,,0,0,5633,1,,fiumark_chacarita
+4d,Señor Antonio Isidoro,846,hombre,45.0,0,0,"E0C0""7769",1,,fiumark_palermo
+3d,Señora Paulina Nelida,328,mujer,39.0,0,0,4:773,2,adelante,fiumark_palermo
+normal,Señorita Feliciana,310,mujer,33.0,0,0,"RE""396:7",6,adelante,fiumark_chacarita
+3d,Señor Hugo Emilio,544,hombre,35.0,1,0,4;2:,3,,fiumark_palermo
+4d,Señora Olga Lidia,329,mujer,34.0,1,1,5854;3,3,,fiumark_palermo
+4d,Señor Roberto Lisalvo,131,hombre,36.0,0,0,56;463,1,,fiumark_chacarita
+4d,Señorita Margarita Benita,864,mujer,,8,2,"EC0""4565",7,,fiumark_palermo
+4d,Señor Antonio Raul Felipe,284,hombre,22.0,0,0,"C170""326:4",1,,fiumark_palermo
+4d,Señorita Sara Rosa Heve,375,mujer,6.0,3,1,56;;2;,3,,fiumark_palermo
+3d,Señor Alfredo Secundino,715,hombre,55.0,0,0,472869,2,,fiumark_palermo
+normal,Señor Honorio Rene,803,hombre,14.0,1,2,335982,12,adelante,fiumark_palermo
+4d,Señorita Alicia Venilde,793,mujer,,8,2,"EC0""4565",7,,fiumark_palermo
+3d,Señor Guillermo Higinio,832,hombre,3.83,1,1,4;328,2,,fiumark_palermo
+4d,Señor Nestor Edgardo,87,hombre,19.0,1,3,"Y01E0""882:",4,,fiumark_palermo
+3d,Señorita Olga del Tránsito,390,mujer,20.0,0,0,"UE""396:",2,,fiumark_chacarita
+4d,Señor Enrique Humberto,372,hombre,21.0,1,0,5323489,1,,fiumark_palermo
+3d,Señor Pascual Horacio,235,hombre,27.0,0,0,"E0C0""4;788",2,,fiumark_palermo
+4d,Señor Arnaldo,649,hombre,,0,0,"U0Q01R0R0""973",1,,fiumark_palermo
+4d,Señor Higinio Honorio,393,hombre,31.0,2,0,5323499,1,,fiumark_palermo
+normal,Señora Lita Mimi,320,mujer,43.0,1,1,38;88,14,adelante,fiumark_chacarita
+4d,Señor Lorenzo Leonides,629,hombre,29.0,0,0,56;446,1,,fiumark_palermo
+4d,Señor José Héctor Alfredo,732,hombre,14.0,0,0,48;;,2,,fiumark_chacarita
+3d,Señorita Dolores Olivera,388,mujer,39.0,0,0,49:6;,2,,fiumark_palermo
+3d,Señor Isidro Simon,884,hombre,31.0,0,0,"E0C01UQVQP""5628:",2,,fiumark_palermo
+normal,Señor Domingo Valentin,506,hombre,21.0,1,0,"RE""3997:",11,adelante,fiumark_chacarita
+normal,Señor Ernesto Mamerto,461,hombre,51.0,0,0,3;;74,3,adelante,fiumark_palermo
+3d,Señora Laura Mafalda,273,mujer,44.0,0,1,472866,2,,fiumark_palermo
+3d,Señora Josefa Simona,99,mujer,37.0,0,1,453;3;,3,,fiumark_palermo
+4d,Señor Oswaldo Jorge,835,hombre,21.0,0,0,4445,1,,fiumark_palermo
+normal,Señor Gustavo Emanuel,263,hombre,55.0,1,1,332635,8,adelante,fiumark_palermo
+3d,Señora Gladis Edit,324,mujer,25.0,1,1,46:95:,3,,fiumark_palermo
+4d,Señora Elvira Caroll,256,mujer,32.0,0,2,4872,2,,fiumark_chacarita
+4d,Señor Alfredo Abel,576,hombre,22.0,0,0,57:7:7,2,,fiumark_palermo
+4d,Señorita Camila Mercedes,437,mujer,24.0,2,2,"Y01E0""882:",4,,fiumark_palermo
+4d,Señor Atilio Ferdinando,389,hombre,,0,0,589877,1,,fiumark_quilmes
+4d,Señor Raúl Beltrán,607,hombre,33.0,0,0,56;468,1,,fiumark_palermo
+3d,Señor Hugo Valdemar,343,hombre,31.0,0,0,46:962,2,,fiumark_palermo
+3d,Señorita Daniela Maria,428,mujer,22.0,0,0,472877,3,,fiumark_palermo
+4d,Señor Reynaldo Hipolito,489,hombre,33.0,0,0,"C070""3:72;",1,,fiumark_palermo
+4d,Señorita Elena Esperanza,72,mujer,19.0,5,2,"EC""4366",5,,fiumark_palermo
+4d,Señorita Dominga Geralda,3,mujer,29.0,0,0,"UVQP1Q40""53234:4",1,,fiumark_palermo
+normal,Señorita Felisa Fornarina,843,mujer,33.0,0,0,3359;:,4,,fiumark_chacarita
+3d,Señorita Hortensia Amelia,751,mujer,7.0,1,1,4;325,3,,fiumark_palermo
+normal,Señorita Nilda Enid,216,mujer,34.0,1,0,57495,12,adelante,fiumark_chacarita
+4d,Señor Leopoldo Martin,726,hombre,23.0,0,0,5372;6,1,,fiumark_palermo
+3d,Señorita Estela Lucia Dominga,358,mujer,41.0,0,0,459893,2,,fiumark_palermo
+3d,Señorita Flora Haydeé,748,mujer,33.0,0,0,47286:,2,,fiumark_palermo
+4d,Señor Rigoberto Omar,60,hombre,14.0,5,2,"EC""4366",5,,fiumark_palermo
+4d,Señor Olegario Ramón,297,hombre,26.5,0,0,48;5,1,,fiumark_chacarita
+4d,Señorita Segunda Dalimena,275,mujer,,0,0,592597,1,,fiumark_quilmes
+normal,Señora Irma Hipolita,559,mujer,42.0,1,1,332635,8,adelante,fiumark_palermo
+4d,Señor Sabino Albino,202,hombre,,8,2,"EC0""4565",7,,fiumark_palermo
+normal,Señor Juan,545,hombre,53.0,1,0,"RE""39983",11,adelante,fiumark_chacarita
+4d,Señor Hugo Horacio de Jesus,687,hombre,17.0,4,1,53234;7,4,,fiumark_palermo
+3d,Señor Fernando Paulino,121,hombre,24.0,2,0,"U0Q0E0""36:9;",8,,fiumark_palermo
+3d,Señora Eva del Valle,54,mujer,32.0,1,0,4;48,3,,fiumark_palermo
+4d,Señorita Genoveva Haydeé,15,mujer,17.0,0,0,572628,1,,fiumark_palermo
+4d,Señor Rodolfo Lino,17,hombre,5.0,4,1,5:4874,3,,fiumark_quilmes
+4d,Señor Isidro Waldo,647,hombre,22.0,0,0,56;453,1,,fiumark_palermo
+4d,Señor Domingo Sabatino,564,hombre,,0,0,"UQVQP1QS""5;42:4",1,,fiumark_palermo
+4d,Señor Felipe Martin,553,hombre,,0,0,552;9;,1,,fiumark_quilmes
+normal,Señor Ernesto Manuel,119,hombre,27.0,0,1,"RE""3977:",25,adelante,fiumark_chacarita
+3d,Señora Elva Del Trancito,400,mujer,31.0,0,0,462;4;,2,,fiumark_palermo
+3d,Señor Vicente Lucio,194,hombre,6.0,1,1,4522:2,3,medio,fiumark_palermo
+4d,Señor Manuel Teodoro,262,hombre,6.0,4,2,569299,4,,fiumark_palermo
+4d,Señorita Irma Virginia,301,mujer,,0,0,;456,1,,fiumark_quilmes
+4d,Señor Manuel Andres,525,hombre,,0,0,4922,1,,fiumark_chacarita
+3d,Señor Marcelino José,675,hombre,,0,0,45;:78,1,,fiumark_palermo
+4d,Señor Vicente Dionicio,795,hombre,28.0,0,0,56;425,1,,fiumark_palermo
+4d,Señor Pablo Mario,720,hombre,36.0,0,0,569284,1,,fiumark_palermo
+normal,Señor Lino Osvaldo,508,hombre,,0,0,333649,3,,fiumark_palermo
+4d,Señor Desiderio Roberto,132,hombre,23.0,0,0,"UQVQP1Q0S0""5323529",1,,fiumark_palermo
+normal,Señorita Delia Adelina,312,mujer,21.0,2,2,"RE""3982:",26,adelante,fiumark_chacarita
+4d,Señor Narciso Antonio Cecilio,94,hombre,29.0,1,2,"E0C0""4537",3,,fiumark_palermo
+3d,Señor Fidel Amancio,318,hombre,57.0,0,0,4;233,2,,fiumark_palermo
+normal,Señor Julio Martires,36,hombre,45.0,1,0,3359:;,6,,fiumark_palermo
+4d,Señora Segunda Noelia,19,mujer,34.0,1,0,567985,2,,fiumark_palermo
+3d,Señor Gregorio del Jesus,530,hombre,26.0,2,1,4;326,2,,fiumark_palermo
+4d,Señor Herminio Hector,705,hombre,29.0,1,0,572247,1,,fiumark_palermo
+4d,Señor Argentino Reynaldo,443,hombre,28.0,1,0,569298,1,,fiumark_palermo
+normal,Señor Samuel Alfredo,603,hombre,,0,0,3359;8,5,,fiumark_palermo
+4d,Señor Fortunato Victor,373,hombre,22.0,0,0,545;73,1,,fiumark_palermo
+3d,Señor Modesto Emilio,145,hombre,21.0,0,0,453;67,2,,fiumark_palermo
+4d,Señorita Carmen Luisa,681,mujer,,0,0,552;57,1,,fiumark_quilmes
+normal,Señor Lino Armando,663,hombre,50.0,0,0,7949,3,adelante,fiumark_palermo
+4d,Señor Juan Ranulfo,683,hombre,23.0,0,0,8785,1,,fiumark_palermo
+4d,Señor Abraham Natalio,870,hombre,7.0,1,1,569964,2,,fiumark_palermo
+4d,Señorita Estela Pastora,199,mujer,,0,0,592592,1,,fiumark_quilmes
+4d,Señor Juan Serapio,615,hombre,38.0,0,0,586734,1,,fiumark_palermo
+normal,Señorita Esmeralda Pura,259,mujer,38.0,0,0,"RE""39977",50,,fiumark_chacarita
+4d,Señorita Celina Olides,277,mujer,48.0,0,0,569295,1,,fiumark_palermo
+3d,Señor Atilio Felix,243,hombre,32.0,0,0,"Y01E0""36485",2,,fiumark_palermo
+normal,Señor Saul Humberto,374,hombre,25.0,0,0,"RE""39982",14,,fiumark_chacarita
+4d,Señora Elena Telma,798,mujer,34.0,0,0,56;466,1,,fiumark_palermo
+4d,Señor Isidro Arnoldo,496,hombre,,0,0,4849,2,,fiumark_chacarita
+4d,Señor Orlando Ever,155,hombre,,0,0,"Hc""487524",1,,fiumark_palermo
+4d,Señor Roberto Ludovico,694,hombre,28.0,0,0,4894,1,,fiumark_chacarita
+normal,Señora America Pilar,384,mujer,38.0,1,0,3359:;,6,,fiumark_palermo
+3d,Señor Abel Sabino,813,hombre,38.0,0,0,4:428,2,,fiumark_palermo
+normal,Señorita Sara Nicasia,338,mujer,44.0,0,0,38;88,14,adelante,fiumark_chacarita
+normal,Señora Leonilda Vital,53,mujer,52.0,1,0,"RE""39794",8,adelante,fiumark_chacarita
+3d,Señor Osvaldo Atilio,406,hombre,37.0,1,0,4:886,3,,fiumark_palermo
+4d,Señorita Pascuala Amada,645,mujer,3.75,2,1,4888,2,,fiumark_chacarita
+4d,Señorita Nidia Amadea,377,mujer,25.0,0,0,"E""9299",1,,fiumark_palermo
+3d,Señor Carlos Elvio,136,hombre,26.0,0,0,"UE1RCTKU""4355",2,,fiumark_chacarita
+4d,Señor Segundo Rafael,52,hombre,24.0,0,0,"C160""5;::8",1,,fiumark_palermo
+normal,Señora Nora Betty,308,mujer,20.0,1,0,"RE""3997:",11,adelante,fiumark_chacarita
+3d,Señor Roque Roberto,22,hombre,37.0,0,0,46:8;:,2,adelante,fiumark_palermo
+4d,Señora Olga Marinilda,737,mujer,51.0,1,3,"Y01E0""882:",4,,fiumark_palermo
+normal,Señor Dalmiro Anzalon,873,hombre,36.0,0,0,8;7,1,adelante,fiumark_palermo
+normal,Señor Luis Domiciano,816,hombre,,0,0,33427:,1,adelante,fiumark_palermo
+normal,Señorita Tomasa Rosa,538,mujer,33.0,0,0,"RE""39983",11,,fiumark_chacarita
+4d,Señor Ignacio Nazar,689,hombre,21.0,0,0,572258,1,,fiumark_palermo
+normal,Señor Amilcar Cirilo,84,hombre,31.0,0,0,33527;,5,,fiumark_palermo
+4d,Señorita Ofelia Noemi Teodora,643,mujer,5.0,3,2,5692::,3,,fiumark_palermo
+4d,Señor Jorge Haroldo,745,hombre,34.0,0,0,"UVQP1Q""40""53234::",1,,fiumark_palermo
+normal,Señor Julio Severino,746,hombre,73.0,1,1,"YG1R""7957",7,adelante,fiumark_palermo
+normal,Señor Martirio Trinidad,741,hombre,,0,0,38;::,3,adelante,fiumark_palermo
+3d,Señor Antolin Irazel,408,hombre,6.0,1,1,4;328,2,,fiumark_palermo
+normal,Señor Francisco Eladio,188,hombre,48.0,0,0,33364:,3,,fiumark_palermo
+4d,Señorita Angela Lidia,635,mujer,12.0,3,2,5692::,3,,fiumark_palermo
+3d,Señorita Lilian Edith,44,mujer,6.0,1,2,"UE1Rctku""4345",5,,fiumark_chacarita
+4d,Señor Livio,361,hombre,43.0,1,4,5692::,3,,fiumark_palermo
+4d,Señor Nestor Bernardo,102,hombre,,0,0,56;437,1,,fiumark_palermo
+4d,Señor Isidoro Higinio,518,hombre,,0,0,593332,3,,fiumark_quilmes
+4d,Señor Manuel Cesar,684,hombre,17.0,5,2,"EC""4366",5,,fiumark_palermo
+4d,Señor Enrique Kuna,602,hombre,,0,0,56;436,1,,fiumark_palermo
+normal,Señorita Berta Delia,291,mujer,29.0,0,0,3;:99,8,,fiumark_palermo
+normal,Señora Bienvenida Del Transito,557,mujer,51.0,1,0,33977,4,adelante,fiumark_chacarita
+4d,Señor Rafael Vidal,747,hombre,19.0,1,1,"E0C0""4895",2,,fiumark_palermo
+4d,Señor Horacio Arnaldo,204,hombre,48.5,0,0,484:,1,,fiumark_chacarita
+normal,Señora Matilde Carolina,830,mujer,65.0,0,0,335794,8,adelante,
+4d,Señor Francisco Nemecio,267,hombre,19.0,4,1,53234;7,4,,fiumark_palermo
+normal,Señora Sara Sofía Marice,872,mujer,50.0,1,1,33973,6,adelante,fiumark_palermo
+3d,Señorita Amanda Alba Juliana,346,mujer,27.0,0,0,46:955,2,medio,fiumark_palermo
+normal,Señora Josefa Nicolasa,782,mujer,20.0,1,0,39696,6,adelante,fiumark_palermo
+4d,Señor Clemente Teodoro Benigno,66,hombre,,1,1,4883,2,,fiumark_chacarita
+4d,Señor Teofilo Antonio,189,hombre,43.0,1,1,586:6;,2,,fiumark_quilmes
+4d,Señorita Juana Renata,405,mujer,23.0,0,0,5372;8,1,,fiumark_palermo
+4d,Señor Salvador Maria,529,hombre,42.0,0,0,53234;8,1,,fiumark_palermo
+normal,Señor Eduardo Avilio,253,hombre,65.0,0,0,335736,3,adelante,fiumark_palermo
+3d,Señor Emeterio de Jesus,309,hombre,33.0,1,0,"R1RR""55:3",3,,fiumark_chacarita
+3d,Señorita Elisa Ide,531,mujer,5.0,1,1,48582,3,,fiumark_palermo
+normal,Señor Julio Teobaldo,626,hombre,64.0,0,0,58;85,4,adelante,fiumark_palermo
+3d,Señor Gustavo Jose,451,hombre,39.0,1,2,"E0C0""56873",3,,fiumark_palermo
+3d,Señora Delia Elsie,519,mujer,39.0,1,0,448:97,3,,fiumark_palermo
+4d,Señor Luis Nicasio,460,hombre,,0,0,593282,1,,fiumark_quilmes
+4d,Señor Pascual Ermindo,283,hombre,19.0,0,0,56799:,1,,fiumark_palermo
+4d,Señor Vicente Ernesto,522,hombre,25.0,0,0,56;474,1,,fiumark_palermo
+4d,Señora Angela Estefania,424,mujer,31.0,1,1,5692:2,2,,fiumark_palermo
+normal,Señorita Ana Aurora Remedio,394,mujer,26.0,1,0,57495,12,adelante,fiumark_chacarita
+4d,Señor Salvador JesÚs,327,hombre,64.0,0,0,567586,1,,fiumark_palermo
+4d,Señorita Juana Matilde,236,mujer,,0,0,"Y01E0""882;",1,,fiumark_palermo
+4d,Señor Horacio Adan,396,hombre,25.0,0,0,572274,1,,fiumark_palermo
+4d,Señor Jorge Elias Eduardo,147,hombre,30.0,0,0,572265,1,,fiumark_palermo
+4d,Señora Gregoria Exter,679,mujer,46.0,1,6,"EC""4366",5,,fiumark_palermo
+4d,Señor Gerardo Mariano,364,hombre,38.0,0,0,"UQVQP1Q0S0""5323532",1,,fiumark_palermo
+4d,Señorita Filomena Adelin,120,mujer,5.0,4,2,5692:4,4,,fiumark_palermo
+4d,Señorita Josefa Saturnina,475,mujer,25.0,0,0,9775,1,,fiumark_palermo
+normal,Señor Lorenzo Natalio,493,hombre,58.0,0,0,3359:9,3,adelante,fiumark_palermo
+4d,Señora Orlinda Victoria,568,mujer,32.0,0,4,56;;2;,3,,fiumark_palermo
+4d,Señor Carlos Manuel Hipolito,561,hombre,,0,0,594844,1,,fiumark_quilmes
+4d,Señor Ricardo Demetrio,847,hombre,,8,2,"EC0""4565",7,,fiumark_palermo
+3d,Señorita Blanca Ascencion,536,mujer,10.0,0,2,"H0E0E0""3574;",3,,fiumark_palermo
+3d,Señorita Clotilde Norma,577,mujer,37.0,0,0,465::2,2,,fiumark_palermo
+4d,Señor Facundo Roque,822,hombre,30.0,0,0,5372;:,1,,fiumark_palermo
+4d,Señor Eduardo Honorio,287,hombre,33.0,0,0,567996,1,,fiumark_palermo
+4d,Señor Osvaldo Germán,61,hombre,25.0,0,0,488;,1,,fiumark_chacarita
+4d,Señor Adalberto Hipolito,676,hombre,21.0,0,0,56;;34,1,,fiumark_palermo
+normal,Señor Pedro Felix,633,hombre,35.0,0,0,35436,3,adelante,fiumark_chacarita
+4d,Señor Bernardo Jorge,245,hombre,33.0,0,0,48;6,1,,fiumark_chacarita
+normal,Señor Ignacio Wenceslao,807,hombre,42.0,0,0,334272,1,adelante,fiumark_palermo
+normal,Señorita Candida Josefa,888,mujer,22.0,0,0,334275,3,adelante,fiumark_palermo
+4d,Señor Segundo Elias,714,hombre,32.0,0,0,9767,1,,fiumark_palermo
+3d,Señorita Isolina Eustaquia Antonia,597,mujer,,0,0,46:949,4,,fiumark_palermo
+3d,Señorita Jesusa Amelia,581,mujer,28.0,1,1,4599:;,3,,fiumark_palermo
+normal,Señora Elisa Celia,863,mujer,51.0,0,0,39688,3,adelante,fiumark_palermo
+normal,Señor Domingo Ensoriano,682,hombre,30.0,0,0,"RE""39794",8,adelante,fiumark_chacarita
+4d,Señor Leonardo Eusebio,116,hombre,24.0,0,0,"UVQP1Q""40""53234;6",1,,fiumark_palermo
+4d,Señora Silvia Petrona,133,mujer,50.0,1,0,"C170""5559",2,,fiumark_palermo
+3d,Señora Clara Lorenza,427,mujer,31.0,1,0,4225,3,,fiumark_palermo
+3d,Señor Simeon ,237,hombre,47.0,1,0,48929,3,,fiumark_palermo
+3d,Señor Americo Noel,796,hombre,42.0,0,0,4:435,2,,fiumark_palermo
+3d,Señora Juana Andrea,248,mujer,27.0,0,2,47286;,2,,fiumark_palermo
+4d,Señor Severo Alfredo,512,hombre,,0,0,"UQVQP1QS""5323538",1,,fiumark_palermo
+normal,Señorita Luisa Felisa,610,mujer,43.0,0,0,"RE""397:4",15,adelante,fiumark_palermo
+4d,Señor Atilio Pedro,704,hombre,28.0,0,0,58:86,1,,fiumark_quilmes
+4d,Señorita Flora Liamar,193,mujer,22.0,1,0,572268,1,,fiumark_palermo
+normal,Señor Pedro Witremundo,783,hombre,32.0,0,0,335723,3,adelante,fiumark_palermo
+normal,Señora Leonor Oliva,167,mujer,,0,1,335727,6,adelante,fiumark_palermo
+4d,Señor Pablo Olgo,632,hombre,54.0,0,0,569965,1,,fiumark_palermo
+normal,Señorita Regina Ermelinda,89,mujer,26.0,3,2,3;;72,26,adelante,fiumark_palermo
+4d,Señor Pedro Edgar,426,hombre,,0,0,"C160""56466",1,,fiumark_palermo
+normal,Señorita Josefa Alejandra,326,mujer,39.0,0,0,"RE""39982",14,adelante,fiumark_chacarita
+4d,Señor David Abdala,839,hombre,35.0,0,0,3823,6,,fiumark_palermo
+3d,Señor Argentino Jesus,362,hombre,32.0,1,0,"UE1RCTKU""4389",3,,fiumark_chacarita
+normal,Señor Alberto Ramón,537,hombre,48.0,0,0,335272,3,adelante,fiumark_palermo
+normal,Señora Jacinta Isabel Olivera,269,mujer,61.0,0,1,"RE""397:4",15,adelante,fiumark_palermo
+4d,Señorita Lilia Noelia,470,mujer,3.75,2,1,4888,2,,fiumark_chacarita
+4d,Señorita Catalina Elvira,678,mujer,21.0,0,0,635:,1,,fiumark_palermo
+4d,Señor Héctor Livio Eduardo,752,hombre,9.0,0,1,5;42;8,2,adelante,fiumark_palermo
+normal,Señora Olga Catalina Magdalena,760,mujer,36.0,0,0,332374,9,adelante,fiumark_palermo
+3d,Señora Amalia Olga Ilda,474,mujer,26.0,0,0,"UE1CJ""Dcung""763",2,adelante,fiumark_chacarita
+4d,Señor Rolando Miguel,596,hombre,39.0,1,1,567995,3,,fiumark_palermo
+normal,Señora Elia Laudelina,195,mujer,47.0,0,0,"RE""39832",3,adelante,fiumark_chacarita
+4d,Señorita Livia Regina,142,mujer,25.0,0,0,5692:3,1,,fiumark_palermo
+4d,Señor Hortensio Raul,288,hombre,25.0,0,0,56;428,1,,fiumark_palermo
+4d,Señor Luis Rey,144,hombre,22.0,0,0,587444,1,,fiumark_quilmes
+3d,Señor Ezequiel Ambrosio,656,hombre,27.0,2,0,"U0Q0E0""36:9;",8,,fiumark_palermo
+4d,Señor Juan Jorge Ovidio,325,hombre,,8,2,"EC0""4565",7,,fiumark_palermo
+4d,Señorita Ermelinda  Alcira,360,mujer,,0,0,552;:2,1,,fiumark_quilmes
+4d,Señor Francisco Asis,207,hombre,35.0,1,0,532349:,2,,fiumark_palermo
+3d,Señor José Eulogio,214,hombre,33.0,0,0,472868,2,,fiumark_palermo
+3d,Señor Alfredo Salomon,71,hombre,35.0,0,0,"E0C0""55333",2,,fiumark_palermo
+4d,Señorita Julia Nemesia,39,mujer,21.0,2,0,567986,2,,fiumark_palermo
+3d,Señora Dora Nelida,441,mujer,48.0,1,1,"H0E0E0""3574;",3,,fiumark_palermo
+4d,Señorita Clarisa Rosa,101,mujer,31.0,0,0,56;467,1,,fiumark_palermo
+4d,Señor Heriberto Pedro,401,hombre,42.0,0,0,"UVQP1Q""40""53234:;",1,,fiumark_palermo
+normal,Señor Augusto Clemente,333,hombre,41.0,0,1,"RE""397:4",15,adelante,fiumark_palermo
+4d,Señor Domingo Felipe,861,hombre,44.0,2,0,572248,2,,fiumark_palermo
+normal,Señora Serafina Ana,292,mujer,22.0,1,0,33;89,9,adelante,fiumark_chacarita
+normal,Señor Gabriel Antenor,661,hombre,53.0,2,0,"RE""39833",14,,fiumark_palermo
+4d,Señor David Esteban,244,hombre,25.0,0,0,"UVQP1Q""40""5323497",1,,fiumark_palermo
+normal,Señor Roberto Aurelio,171,hombre,64.0,0,0,333462,4,adelante,fiumark_palermo
+4d,Señor Guillermo Antonio,321,hombre,25.0,0,0,"C17""43394",1,,fiumark_palermo
+4d,Señor Hugo O,562,hombre,43.0,0,0,56;473,1,,fiumark_palermo
+4d,Señor Lisardo Mario,549,hombre,36.0,1,1,5854;3,3,,fiumark_palermo
+4d,Señor Salvador Marcos,305,hombre,,0,0,"C17""4688",1,,fiumark_palermo
+4d,Señorita Felipa Geronima,594,mujer,,0,2,586:6:,1,,fiumark_quilmes
+4d,Señor Agustin Cirilo,46,hombre,,0,0,"U0E01C060""45789",1,,fiumark_palermo
+3d,Señor Victorio Nicolas,229,hombre,21.0,0,0,458393,2,,fiumark_palermo
+normal,Señor Eloy Raúl,573,hombre,39.0,0,0,"RE""39696",3,adelante,fiumark_palermo
+3d,Señor Eleuterio Gabino,467,hombre,,0,0,45;:75,1,,fiumark_palermo
+4d,Señor Ernesto Ibrahin,539,hombre,,0,0,5866;:,2,,fiumark_palermo
+normal,Señorita Cristina Filipina,319,mujer,34.0,0,2,58;4:,17,adelante,fiumark_palermo
+3d,Señor Luis Florencio,289,hombre,45.0,0,0,4599;:,2,,fiumark_palermo
+4d,Señor Jorge Julio Golfredo,791,hombre,,0,0,34682,1,,fiumark_quilmes
+4d,Señor Urbano Saturnino,700,hombre,45.0,0,0,56:343,1,medio,fiumark_palermo
+3d,Señora Francisca Florinda,671,mujer,43.0,1,1,4;972,4,,fiumark_palermo
+4d,Señor Emiliano Polen,806,hombre,34.0,0,0,569285,1,,fiumark_palermo
+4d,Señora Elsa Orlinda,187,mujer,,1,0,592587,2,,fiumark_quilmes
+4d,Señor Juan Nicanor,43,hombre,,0,0,56;475,1,,fiumark_chacarita
+normal,Señorita Nelia Elena,357,mujer,25.0,0,1,335727,6,adelante,fiumark_palermo
+normal,Señor Leopoldo Esteban,588,hombre,63.0,1,1,35789,8,adelante,fiumark_chacarita
+4d,Señor Jaime Isidoro,567,hombre,22.0,0,0,56;427,1,,fiumark_palermo
+normal,Señora Victoria Edith,231,mujer,38.0,1,0,58;95,9,adelante,fiumark_palermo
+4d,Señora Delia Guillermina,560,mujer,39.0,1,0,567794,2,,fiumark_palermo
+4d,Señor Secundino Deciderio,472,hombre,41.0,0,0,5372:;,1,,fiumark_palermo
+3d,Señor Victorio Guerino,733,hombre,,0,0,45;:77,1,,fiumark_palermo
+4d,Señora Magda Nair,618,mujer,29.0,1,0,"C170""5558",2,,fiumark_palermo
+3d,Señor Manuel Hermogenes,735,hombre,26.0,0,0,45585;,2,,fiumark_palermo
+normal,Señor Manuel Nicanor,551,hombre,20.0,0,2,39643,11,adelante,fiumark_chacarita
+normal,Señor Eleuterio Jorge,98,hombre,26.0,0,1,"RE""3997;",7,adelante,fiumark_chacarita
+4d,Señor Candido Gerardo,710,hombre,,1,1,4883,2,,fiumark_chacarita
+normal,Señor Arturo Carlos,646,hombre,51.0,1,0,"RE""39794",8,adelante,fiumark_chacarita
+3d,Señor Francisco Bernardino,240,hombre,36.0,0,0,"UEQ1Y""37:7",2,,fiumark_palermo
+4d,Señorita Hilda Leonor,486,mujer,,3,1,6355,3,,fiumark_palermo
+4d,Señorita Isabel Lydia,703,mujer,21.0,0,1,48;3,2,,fiumark_chacarita
+3d,Señor Augusto Luciano,809,hombre,42.0,0,0,46:945,2,,fiumark_palermo
+normal,Señorita Catalina Elena Lucia,258,mujer,33.0,0,0,332374,9,adelante,fiumark_palermo
+4d,Señor Victorio Andres,77,hombre,,0,0,56;42:,1,,fiumark_palermo
+4d,Señora Clara Clementina,886,mujer,42.0,0,5,5:4874,3,,fiumark_quilmes
+4d,Señor Enrique Amado,70,hombre,29.0,2,0,537373,1,,fiumark_palermo
+normal,Señor Hipolito Victoriano,296,hombre,,0,0,"RE""39834",3,,fiumark_chacarita
+4d,Señorita Angela Gabina,359,mujer,,0,0,552;53,1,,fiumark_quilmes
+3d,Señorita Hilda Ernesta Francisca,652,mujer,21.0,0,1,453;3;,3,,fiumark_palermo
+normal,Señor Osvaldo Heriberto,332,hombre,48.5,0,0,335265,3,adelante,fiumark_palermo
+4d,Señor Alberto Godofredo,762,hombre,44.0,0,0,"UQVQP1Q4""5323494",1,,fiumark_palermo
+normal,Señora Dominga Dora,487,mujer,38.0,1,0,3;;65,9,adelante,fiumark_palermo
+4d,Señor Osvaldo Conrado,740,hombre,,0,0,56;43:,1,,fiumark_palermo
+4d,Señorita Dulce Nombre de Maria,242,mujer,,1,0,589452,2,,fiumark_quilmes
+4d,Señor Pedro Nicanor  Antonio,580,hombre,35.0,0,0,"UVQP1Q""40""53234:8",1,,fiumark_palermo
+4d,Señor Ciro Alejandro,161,hombre,47.0,0,1,593584,2,,fiumark_palermo
+3d,Señor Sixto Romualdo,801,hombre,37.0,0,0,472869,2,,fiumark_palermo
+4d,Señor Norberto Eugenio,197,hombre,,0,0,58:925,1,,fiumark_quilmes
+4d,Señor Basilio Silverio,47,hombre,,1,0,592593,2,,fiumark_quilmes
+3d,Señorita Camila Rosalia,57,mujer,24.0,0,0,"E0C0""53248",2,,fiumark_palermo
+4d,Señor Obdulio Pablo,404,hombre,31.0,1,0,"UVQP1Q40""532349;",2,,fiumark_palermo
+4d,Señor Olegario Gregorio,445,hombre,,0,0,87528,1,,fiumark_palermo
+3d,Señor Rodolfo Mateo,756,hombre,3.67,1,1,47286;,2,,fiumark_palermo
+normal,Señorita Toribia Justina Haydee,586,mujer,21.0,0,2,332635,8,adelante,fiumark_palermo
+4d,Señor Julio Lucrecio,845,hombre,20.0,0,0,5372;2,1,,fiumark_palermo
+normal,Señor Gabriel Nuncio,702,hombre,38.0,0,0,"RE""39697",3,adelante,fiumark_palermo
+4d,Señor Antonio Septimo,785,hombre,28.0,0,0,"UQVQP1Q0S0""5323534",1,,fiumark_palermo
+4d,Señor Pedro Miguel Fidel,421,hombre,,0,0,56;476,1,,fiumark_chacarita
+4d,Señor Pablo Alfonso,106,hombre,31.0,0,0,56;429,1,,fiumark_palermo
+normal,Señorita Rosa Cornelia,62,mujer,41.0,0,0,335794,8,adelante,
+normal,Señorita Antonia Lilia,219,mujer,35.0,0,0,33:35,8,adelante,fiumark_chacarita
+4d,Señorita Mercedes Elisa,23,mujer,18.0,0,0,552;45,1,,fiumark_quilmes
+4d,Señor Juan Adolfo,165,hombre,4.0,4,1,53234;7,4,,fiumark_palermo
+4d,Señor Luis Florian,651,hombre,,0,0,56;443,1,,fiumark_palermo
+3d,Señorita Graciana Beatriz,323,mujer,33.0,0,0,456:3:,2,,fiumark_quilmes
+4d,Señor Filomeno Heriberto,669,hombre,46.0,0,0,"C17""5758",1,,fiumark_palermo
+4d,Señor Edgardo Hugo,339,hombre,48.0,0,0,97;:,1,,fiumark_palermo
+3d,Señor Celso Pedro,151,hombre,54.0,0,0,"U0Q0R0""3388",2,,fiumark_palermo
+normal,Señor Osvaldo Roberto,725,hombre,30.0,1,0,335:28,6,adelante,fiumark_palermo
+4d,Señor Demetrio Martin,668,hombre,,0,0,534;;5,1,,fiumark_palermo
+4d,Señor Horacio Cèsar,784,hombre,,1,2,"Y01E0""8829",3,,fiumark_palermo
+normal,Señorita Justa Teodomina,540,mujer,25.0,0,2,3578:,5,adelante,fiumark_chacarita
+4d,Señorita Lilia Carmen,209,mujer,19.0,0,0,589453,1,,fiumark_quilmes
+4d,Señor Florencio Alberto,465,hombre,,0,0,"C1U""4:38",1,,fiumark_palermo
+4d,Señor Humberto Eustaquio,423,hombre,32.0,0,0,5372:4,1,,fiumark_palermo
+4d,Señor Eduardo Marcelo,479,hombre,25.0,0,0,572282,1,,fiumark_palermo
+normal,Señor Ernesto Arnaldo,169,hombre,,0,0,"RE""3953:",3,,fiumark_palermo
+normal,Señora Filomena Rosa,367,mujer,63.0,1,0,332:35,8,adelante,fiumark_chacarita
+normal,Señor Roberto Vidal,767,hombre,,0,0,33459;,4,,fiumark_chacarita
+4d,Señor Adolfo Efrain,844,hombre,37.5,0,0,48:5,1,,fiumark_chacarita
+normal,Señor Roque Tomas,680,hombre,39.0,0,1,"RE""39977",50,adelante,fiumark_chacarita
+normal,Señor Pascual Benjamin,672,hombre,34.0,1,0,"H0E0""34972",6,adelante,fiumark_palermo
+4d,Señor Ricardo Alfredo Estanislao,13,hombre,23.0,0,0,"C170""4373",1,,fiumark_palermo
+4d,Señor Jorge Raul Alberto,606,hombre,39.0,1,0,56;;32,2,,fiumark_palermo
+4d,Señor Jorge Fermin Pablo,841,hombre,23.0,0,0,"UQVQP1Q4""53234:9",1,,fiumark_palermo
+3d,Señor Antonio Lorenzo,414,hombre,,0,0,45;:75,1,,fiumark_palermo
+normal,Señorita Isidora Irmina,178,mujer,53.0,0,0,"RE""397;7",3,adelante,fiumark_chacarita
+3d,Señora Rosalía Antonia,507,mujer,36.0,0,2,48582,3,,fiumark_palermo
+4d,Señor Pascual Salomon,456,hombre,32.0,0,0,56;462,1,,fiumark_chacarita
+normal,Señor Emiliano Jacinto,285,hombre,,0,0,335278,3,adelante,fiumark_palermo
+3d,Señor Horacio Oscar,227,hombre,22.0,0,0,"UY1RR""973",2,,fiumark_palermo
+4d,Señorita Pabla Petrona,241,mujer,,1,0,4887,2,,fiumark_chacarita
+4d,Señora Angela Erminia,348,mujer,,1,0,5:8747,2,,fiumark_palermo
+3d,Señor Mateo Jose Bartolome,184,hombre,4.0,2,1,452358,4,medio,fiumark_palermo
+normal,Señor Ariel Hector,622,hombre,45.0,1,0,33975,6,adelante,fiumark_palermo
+normal,Señor Rogelio Esteban,370,mujer,27.0,0,0,"RE""39699",7,adelante,fiumark_chacarita
+4d,Señorita Romana Armerinda,543,mujer,14.0,4,2,5692:4,4,,fiumark_palermo
+4d,Señor Sergio Pascual,336,hombre,,0,0,56;447,1,,fiumark_palermo
+normal,Señor Florencio Benito,790,hombre,49.0,0,0,"RE""397;5",8,adelante,fiumark_chacarita
+4d,Señor Demetrio Roberto,653,hombre,24.0,0,0,:697,1,,fiumark_palermo
+3d,Señorita Blanca Salome,459,mujer,53.0,0,0,"H0E0E0""35753",2,,fiumark_palermo
+4d,Señor Higinio Hilario,176,hombre,21.0,1,1,572626,1,,fiumark_palermo
+4d,Señor Bernardo Lindor,838,hombre,,0,0,5;42;4,1,,fiumark_palermo
+4d,Señor Anibal Timoteo,750,hombre,34.0,0,0,5572;9,1,,fiumark_quilmes
+4d,Señorita Albina Ana,157,mujer,19.0,0,0,57:73,1,,fiumark_quilmes
+4d,Señora Catalina Elsa,20,mujer,,0,0,486;,1,,fiumark_chacarita
+normal,Señor Juan Bautista Sadi,431,hombre,31.0,0,0,332786,3,adelante,fiumark_palermo
+3d,Señora Vilma Olga,601,mujer,27.0,2,1,465:69,3,,fiumark_palermo
+normal,Señor Nestor Aquilino,391,hombre,39.0,1,2,335982,12,adelante,fiumark_palermo
+4d,Señor Victoriano,599,hombre,,0,0,4886,1,,fiumark_chacarita
+4d,Señor Vicente Robustiano,232,hombre,32.0,0,0,569289,1,,fiumark_palermo
+4d,Señor Guillermo Alfredo,198,hombre,45.0,0,1,679;,1,,fiumark_palermo
+4d,Señor Eduardo Salomon,492,hombre,24.0,0,0,"UQVQP1QS""5323539",1,,fiumark_palermo
+3d,Señorita Salvadora Concepcion,619,mujer,7.0,2,1,452358,4,medio,fiumark_palermo
+3d,Señora Olga Elida,875,mujer,31.0,1,0,"R1RR""55:3",3,,fiumark_chacarita
+4d,Señor Roque Cesar,719,hombre,,0,0,5878:,2,,fiumark_quilmes
+4d,Señor Carlos Eusebio,811,hombre,29.0,0,0,5696,1,,fiumark_palermo
+4d,Señora Mariana Elisa,50,mujer,21.0,1,0,56;459,2,,fiumark_palermo
+3d,Señorita Eusebia Celia,59,mujer,8.0,1,2,"E0C0""56873",3,,fiumark_palermo
+4d,Señor Carlos Honorio,891,hombre,35.0,0,0,592598,1,,fiumark_quilmes
+3d,Señor Porfirio Ramon,220,hombre,33.0,0,0,"Y1E""3642:",2,,fiumark_palermo
+normal,Señor Alberto Edmundo,56,hombre,,0,0,3;;69,4,adelante,fiumark_palermo
+4d,Señor Manuel Isidro,500,hombre,27.0,0,0,572257,1,,fiumark_palermo
+normal,Señor Luis Israel,103,hombre,24.0,0,1,574:3,8,adelante,fiumark_palermo
+4d,Señor Miguel Hermes Gregorio,68,hombre,22.0,0,0,"U0R0""5686",1,,fiumark_palermo
+4d,Señor Enrique Iriberto,804,hombre,3.42,0,1,4847,1,,fiumark_chacarita
+3d,Señor Carlos Maria Cayetano,723,hombre,37.0,0,0,34455,2,,fiumark_palermo
+normal,Señora Virginia América,780,mujer,46.0,0,1,46382,21,adelante,fiumark_palermo
+4d,Señor Osvaldo Ildemar,104,hombre,36.0,0,0,9762,1,,fiumark_palermo
+3d,Señor Carlos Marcelo,887,hombre,30.0,0,0,433758,2,,fiumark_palermo
+3d,Señora Ermelinda Paula,16,mujer,58.0,0,0,46:928,2,,fiumark_palermo
+3d,Señorita Nilda Selva,124,mujer,35.5,0,0,49489,2,adelante,fiumark_palermo
+normal,Señor Reinaldo Mario,708,hombre,45.0,0,0,"RE""39698",3,adelante,fiumark_palermo
+normal,Señora Mercedes Olimpia,514,mujer,57.0,1,0,"RE""39825",6,,fiumark_chacarita
+normal,Señor Mario Jorge Cesar,299,hombre,,0,0,3;;::,3,adelante,fiumark_palermo
+4d,Señor Marcelo Francisco,769,hombre,,1,0,593332,3,,fiumark_quilmes
+normal,Señor Fausto Rene,468,hombre,59.0,0,0,3359;4,3,,fiumark_palermo
+4d,Señora Bernardina Del Carmen,363,mujer,48.0,0,1,48;3,2,,fiumark_chacarita
+4d,Señorita Yolanda Asuncion,698,mujer,,0,0,57:74,1,,fiumark_quilmes
+4d,Señor Segundo René,664,hombre,39.0,0,0,56;432,1,,fiumark_palermo
+4d,Señor Nicolás Rosendo,763,hombre,23.0,0,0,4885,1,,fiumark_chacarita
+4d,Señora Constancia Blasinda,611,mujer,42.0,1,5,5692:4,4,,fiumark_palermo
+3d,Señora Florinda Escolastica,317,mujer,27.0,1,0,466589,3,,fiumark_palermo
+4d,Señorita Emilia Ofelia,33,mujer,,0,0,557899,1,,fiumark_quilmes
+3d,Señor Salvador Amabil,818,hombre,34.0,1,1,"U0E01RCTKU""429;",4,,fiumark_chacarita
+4d,Señor Enrique Rogelio,805,hombre,30.0,0,0,5692:;,1,,fiumark_palermo
+4d,Señor Marcos Oscar,211,hombre,27.0,0,0,"UQVQP1Q0S0""5323533",1,,fiumark_palermo
+3d,Señor Carlos Sandalio,440,hombre,34.0,0,0,"E0C0""3:945",2,,fiumark_palermo
+4d,Señor Pablo Augusto,495,hombre,24.0,0,0,"C16""675:2",1,,fiumark_palermo
+normal,Señor Luciano Felix,7,hombre,57.0,0,0,39685,6,adelante,fiumark_palermo
+4d,Señor Gilberto Nicasio,254,hombre,33.0,1,0,"C170""5558",2,,fiumark_palermo
+normal,Señor Epifanio,712,hombre,,0,0,33524:,3,adelante,fiumark_palermo
+3d,Señor Alejandro Atilio,571,hombre,65.0,0,0,"U0Y01RR""974",2,,fiumark_palermo
+4d,Señor Fernando Jesus,774,hombre,,0,0,4896,1,,fiumark_chacarita
+3d,Señorita Blanca Amelia,418,mujer,21.0,0,2,472874,2,,fiumark_palermo
+4d,Señorita Adelia Mafalda,25,mujer,11.0,3,1,56;;2;,3,,fiumark_palermo
+4d,Señorita Irene Mercedes,655,mujer,21.0,0,0,587448,1,,fiumark_quilmes
+4d,Señorita Jacinta Olga,504,mujer,40.0,0,0,6357,1,,fiumark_palermo
+4d,Señor Juan Aniceto,6,hombre,,0,0,552:99,1,,fiumark_quilmes
+4d,Señora Elva Blanca,41,mujer,43.0,1,0,9768,1,,fiumark_palermo
+normal,Señor Aurelio Francisco,35,hombre,31.0,1,0,"RE""39826",9,,fiumark_chacarita
+4d,Señor Casimiro Ricardo,452,hombre,,1,0,87525,2,,fiumark_palermo
+normal,Señorita Amelia Pura,505,mujer,19.0,0,0,332374,9,adelante,fiumark_palermo
+3d,Señorita Elva Clara,85,mujer,20.0,0,0,"UQ1E""36::7",2,,fiumark_palermo
+3d,Señora Blanca Flora,10,mujer,17.0,1,0,459958,3,,fiumark_chacarita
+normal,Señor Rogelio Hipolito,631,hombre,83.0,0,0,49264,3,adelante,fiumark_palermo
+4d,Señor Héctor Ernesto,860,hombre,,0,0,484;,1,,fiumark_chacarita
+normal,Señor David Jose,93,hombre,49.0,1,0,"Y0G0R0""7956",6,adelante,fiumark_palermo
+normal,Señora Esther Bibiana,850,mujer,,1,0,39675,9,adelante,fiumark_chacarita
+normal,Señor Saturnino Martiniano,274,hombre,40.0,0,1,"RE""397;8",3,adelante,fiumark_chacarita
+3d,Señora Gladis Noemi,547,mujer,22.0,1,0,4;2:,3,,fiumark_palermo
+4d,Señor Francisco Onofre,877,hombre,23.0,0,0,9756,1,,fiumark_palermo
+4d,Señorita Josefa Agripina,730,mujer,28.0,1,0,"UVQP1Q40""5323493",1,,fiumark_palermo
+4d,Señora Matilde Nelida,800,mujer,33.0,1,1,567995,3,,fiumark_palermo
+normal,Señorita Leonilda Emilia,342,mujer,27.0,3,2,3;;72,26,adelante,fiumark_palermo
+4d,Señor Patricio Arcemio,570,hombre,35.0,0,0,572639,1,,fiumark_palermo
+4d,Señor Cesar Ulises,334,hombre,19.0,2,0,567986,2,,fiumark_palermo
+3d,Señor Antonio Carlos Alberto,18,hombre,,0,0,466595,2,,fiumark_palermo
+normal,Señora Delia Ethel,2,mujer,41.0,1,0,"RE""397;;",7,adelante,fiumark_chacarita
+3d,Señora Estela Eufemia,473,mujer,36.0,1,2,"E0C0""56873",3,,fiumark_palermo
+normal,Señor Agustin Enrique,840,hombre,,0,0,33996,3,adelante,fiumark_chacarita
+normal,Señorita Elisa Eufemia,743,mujer,24.0,2,2,"RE""3982:",26,adelante,fiumark_chacarita
+4d,Señor Rodolfo Hugo,76,hombre,28.0,0,0,56:345,1,medio,fiumark_palermo
+4d,Señora Nadia,534,mujer,,0,2,488:,3,,fiumark_chacarita
+4d,Señor Constancio,5,hombre,38.0,0,0,595672,1,,fiumark_palermo
+4d,Señor Mario Edmundo Angel,869,hombre,,0,0,567999,1,,fiumark_palermo
+4d,Señor Nicolás Alejandro Manuel,425,hombre,21.0,1,1,59234;,2,,fiumark_palermo
+4d,Señor Pablo Reinaldo,624,hombre,24.0,0,0,57224;,1,,fiumark_palermo
+normal,Señor Esteban Gaspar,63,hombre,48.0,1,0,58;95,9,adelante,fiumark_palermo
+3d,Señor Julio Aldo,865,hombre,27.0,0,0,455:88,2,,fiumark_palermo
+4d,Señor Francisco Casimiro,532,hombre,,0,0,4863,1,,fiumark_chacarita
+4d,Señor Arturo Cesar,174,hombre,24.0,0,0,"UVQP1Q""40""53234:2",1,,fiumark_palermo
+4d,Señorita Amanda Hilda,692,mujer,7.0,0,1,56;478,2,,fiumark_chacarita
+4d,Señorita Amelia Noemi,129,mujer,,1,1,488:,3,adelante,fiumark_chacarita
+4d,Señor Orlando Dante,589,hombre,25.0,0,0,36;95,1,,fiumark_palermo
+4d,Señor Nestor Manuel,183,hombre,12.0,4,2,569299,4,,fiumark_palermo
+4d,Señora Patricia Gina,639,mujer,44.0,0,5,53234;7,4,,fiumark_palermo
+normal,Señor Domingo Ruperto,271,hombre,,0,0,3359;:,4,,fiumark_palermo
+3d,Señora Isabel Noemi Barbara,755,mujer,51.0,1,2,442:67,7,,fiumark_palermo
+4d,Señor Anibal Humberto,415,hombre,47.0,0,0,"UVQP1Q""40""532348;",1,,fiumark_palermo
+3d,Señor Americo Anibal,482,hombre,,0,0,45;:76,1,,fiumark_palermo
+4d,Señor Raúl Eduardo,812,hombre,42.0,0,0,"C16""6::93",3,,fiumark_palermo
+4d,Señor Juan Mateo Fernando,591,hombre,38.0,0,0,"UVQP1Q""40""5323495",1,,fiumark_palermo
+3d,Señor Francisco Aniceto,548,hombre,,0,0,"UE1RCTKU""4368",2,,fiumark_chacarita
+4d,Señor Armando Nelson,49,hombre,,2,0,4884,3,,fiumark_chacarita
+3d,Señor Lucio Fernando,673,hombre,73.0,0,0,"E0C0""467:2",2,,fiumark_palermo
+normal,Señor Bernardo Melesio,448,hombre,37.0,0,0,3359;6,3,,fiumark_palermo
+3d,Señorita Lidia Catalina,636,mujer,31.0,0,0,45988:,2,,fiumark_palermo
+4d,Señor Arturo Antenor,848,hombre,38.0,0,0,56;435,1,,fiumark_chacarita
+3d,Señorita Natividad Sofia,304,mujer,,0,0,4487;5,2,adelante,fiumark_quilmes
+4d,Señor Isidoro Sebastian,385,hombre,,0,0,56;449,1,,fiumark_palermo
