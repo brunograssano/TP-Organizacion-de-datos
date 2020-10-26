@@ -1,0 +1,12 @@
+Requerimientos del notebook
+
+Se detallan a continuacion todas las dependencias de bibliotecas que son necesarias para ejecutar el notebook sin inconvenientes
+ * pandas
+ * numpy
+ * matplotlib.pyplot
+ * seaborn
+  - Cada una de las anteriores mencionadas debe ser instalada independientemente de Python. 
+    Para facilitar el proceso, se puede instalar Anaconda que ya viene con todas estas dependencias.
+
+ * math
+    - Propia de Python
