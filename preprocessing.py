@@ -58,12 +58,24 @@ def prepararSetDeDatos(info_fiumark_df: pd.DataFrame, usuario_volveria_df: pd.Da
 
 def categoricalNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de NB categorico.
-     Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
 
-    fiumark_procesado_df.drop(columns=['nombre', 'edad', 'precio_ticket', 'id_ticket', 'autocompletamos_edad'], inplace=True)
+    df_procesado = fiumark_procesado_df.drop(columns=['nombre', 'edad', 'precio_ticket', 'id_ticket', 'autocompletamos_edad'])
     # Sacamos estas columnas, ya que no tiene sentido calcular la probabilidad de cada una de ellas. Por ejemplo, cual es la probabilidad de que te llames de tal forma.
 
     encoder = OrdinalEncoder()
-    encoder.fit(fiumark_procesado_df)
+    encoder.fit(df_procesado)
 
-    return encoder.transform(fiumark_procesado_df)
+    return encoder.transform(df_procesado)
+
+
+def multinomialNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
+    """Preparara y dejara listo para usar un dataframe en el modelo de NB multinomial.
+    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+
+    df_procesado = fiumark_procesado_df.drop(columns=['nombre', 'edad', 'id_ticket', 'autocompletamos_edad'])
+
+    encoder = OrdinalEncoder()
+    encoder.fit(df_procesado)
+
+    return encoder.transform(df_procesado)
