@@ -93,7 +93,7 @@ def gaussianNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
 def knnPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de KNN.
     Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    # NORMALIZAR
+    # NORMALIZA
     df_procesado = fiumark_procesado_df.drop(columns=['nombre'])
 
     datos_a_codificar = df_procesado[['sufijo', 'tipo_de_sala', 'genero', 'autocompletamos_edad', 'fila', 'nombre_sede']]
@@ -103,4 +103,23 @@ def knnPreprocessing(fiumark_procesado_df: pd.DataFrame):
 
     datos_numericos = df_procesado[['edad','amigos','parientes','precio_ticket']]
 
-    return np.hstack((np.array(datos_numericos), datos_codificados))
+    datos_juntos = np.hstack((np.array(datos_numericos), datos_codificados))
+    datos_juntos_normalizados = (datos_juntos - datos_juntos.mean())/datos_juntos.std()
+    return datos_juntos_normalizados
+
+def svmPreprocessing(fiumark_procesado_df: pd.DataFrame):
+    """Preparara y dejara listo para usar un dataframe en el modelo de SVM.
+    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+    # NORMALIZA
+    df_procesado = fiumark_procesado_df.drop(columns=['nombre'])
+
+    datos_a_codificar = df_procesado[['sufijo', 'tipo_de_sala', 'genero', 'autocompletamos_edad', 'fila', 'nombre_sede']]
+    encoder = OneHotEncoder(drop='first',sparse=False )
+    encoder.fit(datos_a_codificar)
+    datos_codificados = encoder.transform(datos_a_codificar)
+
+    datos_numericos = df_procesado[['edad','amigos','parientes','precio_ticket']]
+
+    datos_juntos = np.hstack((np.array(datos_numericos), datos_codificados))
+    datos_juntos_normalizados = (datos_juntos - datos_juntos.mean())/datos_juntos.std()
+    return datos_juntos_normalizados
