@@ -79,3 +79,15 @@ def multinomialNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
     encoder.fit(df_procesado)
 
     return encoder.transform(df_procesado)
+
+
+def gaussianNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
+    """Preparara y dejara listo para usar un dataframe en el modelo de NB gaussiano.
+    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+
+    df_procesado = fiumark_procesado_df[['edad','precio_ticket','autocompletamos_edad']]
+
+    encoder = OrdinalEncoder()
+    encoder.fit(df_procesado)
+
+    return encoder.transform(df_procesado)
