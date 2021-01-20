@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import OrdinalEncoder
-
+from sklearn.preprocessing import OneHotEncoder
 
 def prepararSetDeDatos(info_fiumark_df: pd.DataFrame, usuario_volveria_df: pd.DataFrame):
     """Realiza la limpieza y preparacion investigada durante el TP1"""
@@ -55,6 +55,11 @@ def prepararSetDeDatos(info_fiumark_df: pd.DataFrame, usuario_volveria_df: pd.Da
 
     return info_fiumark_df, usuario_volveria_df
 
+def codificarTodo(df_procesado):
+    encoder = OrdinalEncoder() # TODO USAR FIT TRANSFORM
+    encoder.fit(df_procesado)
+    return encoder.transform(df_procesado)
+
 
 def categoricalNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de NB categorico.
@@ -63,10 +68,7 @@ def categoricalNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
     df_procesado = fiumark_procesado_df.drop(columns=['nombre', 'edad', 'precio_ticket', 'id_ticket', 'autocompletamos_edad'])
     # Sacamos estas columnas, ya que no tiene sentido calcular la probabilidad de cada una de ellas. Por ejemplo, cual es la probabilidad de que te llames de tal forma.
 
-    encoder = OrdinalEncoder()
-    encoder.fit(df_procesado)
-
-    return encoder.transform(df_procesado)
+    return codificarTodo(df_procesado)
 
 
 def multinomialNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
@@ -75,10 +77,7 @@ def multinomialNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
 
     df_procesado = fiumark_procesado_df.drop(columns=['nombre', 'edad', 'id_ticket', 'autocompletamos_edad'])
 
-    encoder = OrdinalEncoder()
-    encoder.fit(df_procesado)
-
-    return encoder.transform(df_procesado)
+    return codificarTodo(df_procesado)
 
 
 def gaussianNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
@@ -87,7 +86,21 @@ def gaussianNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
 
     df_procesado = fiumark_procesado_df[['edad','precio_ticket','autocompletamos_edad']]
 
-    encoder = OrdinalEncoder()
-    encoder.fit(df_procesado)
+    return np.array(df_procesado)
 
-    return encoder.transform(df_procesado)
+
+
+def knnPreprocessing(fiumark_procesado_df: pd.DataFrame):
+    """Preparara y dejara listo para usar un dataframe en el modelo de KNN.
+    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+    # NORMALIZAR
+    df_procesado = fiumark_procesado_df.drop(columns=['nombre'])
+
+    datos_a_codificar = df_procesado[['sufijo', 'tipo_de_sala', 'genero', 'autocompletamos_edad', 'fila', 'nombre_sede']]
+    encoder = OneHotEncoder(drop='first',sparse=False )
+    encoder.fit(datos_a_codificar)
+    datos_codificados = encoder.transform(datos_a_codificar)
+
+    datos_numericos = df_procesado[['edad','amigos','parientes','precio_ticket']]
+
+    return np.hstack((np.array(datos_numericos), datos_codificados))
