@@ -55,20 +55,40 @@ def prepararSetDeDatos(info_fiumark_df: pd.DataFrame, usuario_volveria_df: pd.Da
 
     return info_fiumark_df, usuario_volveria_df
 
-def codificarTodo(df_procesado):
-    encoder = OrdinalEncoder() # TODO USAR FIT TRANSFORM
-    encoder.fit(df_procesado)
-    return encoder.transform(df_procesado)
 
+################ AUXILIARES ################
+
+def codificacionOrdinal(datos_a_codificar):
+    encoder = OrdinalEncoder() # TODO USAR FIT TRANSFORM
+    return encoder.fit_transform(datos_a_codificar)
+
+def codificacionOneHot(datos_a_codificar):
+    encoder = OneHotEncoder(drop='first', sparse=False)
+    return encoder.fit_transform(datos_a_codificar)
+
+def normalizar(datos_juntos):
+    return (datos_juntos - datos_juntos.mean()) / datos_juntos.std()
+
+def conversionAVariablesNumericasNormalizadas(fiumark_procesado_df):
+    df_procesado = fiumark_procesado_df.drop(columns=['nombre'])
+    datos_a_codificar = df_procesado[['sufijo', 'tipo_de_sala', 'genero', 'autocompletamos_edad', 'fila', 'nombre_sede']]
+    datos_codificados = codificacionOneHot(datos_a_codificar)
+    datos_numericos = df_procesado[['edad', 'amigos', 'parientes', 'precio_ticket']]
+    datos_juntos = np.hstack((np.array(datos_numericos), datos_codificados))
+    return normalizar(datos_juntos)
+
+
+################ PREPROCESSING ################
 
 def categoricalNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de NB categorico.
     Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
 
     df_procesado = fiumark_procesado_df.drop(columns=['nombre', 'edad', 'precio_ticket', 'id_ticket', 'autocompletamos_edad'])
-    # Sacamos estas columnas, ya que no tiene sentido calcular la probabilidad de cada una de ellas. Por ejemplo, cual es la probabilidad de que te llames de tal forma.
+    # Sacamos estas columnas, ya que no tiene sentido calcular la probabilidad de cada una de ellas.
+    # Por ejemplo, cual es la probabilidad de que te llames de tal forma.
 
-    return codificarTodo(df_procesado)
+    return codificacionOrdinal(df_procesado)
 
 
 def multinomialNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
@@ -77,7 +97,7 @@ def multinomialNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
 
     df_procesado = fiumark_procesado_df.drop(columns=['nombre', 'edad', 'id_ticket', 'autocompletamos_edad'])
 
-    return codificarTodo(df_procesado)
+    return codificacionOrdinal(df_procesado)
 
 
 def gaussianNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
@@ -88,38 +108,12 @@ def gaussianNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
 
     return np.array(df_procesado)
 
-
-
 def knnPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de KNN.
     Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    # NORMALIZA
-    df_procesado = fiumark_procesado_df.drop(columns=['nombre'])
-
-    datos_a_codificar = df_procesado[['sufijo', 'tipo_de_sala', 'genero', 'autocompletamos_edad', 'fila', 'nombre_sede']]
-    encoder = OneHotEncoder(drop='first',sparse=False )
-    encoder.fit(datos_a_codificar)
-    datos_codificados = encoder.transform(datos_a_codificar)
-
-    datos_numericos = df_procesado[['edad','amigos','parientes','precio_ticket']]
-
-    datos_juntos = np.hstack((np.array(datos_numericos), datos_codificados))
-    datos_juntos_normalizados = (datos_juntos - datos_juntos.mean())/datos_juntos.std()
-    return datos_juntos_normalizados
+    return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
 
 def svmPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de SVM.
     Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    # NORMALIZA
-    df_procesado = fiumark_procesado_df.drop(columns=['nombre'])
-
-    datos_a_codificar = df_procesado[['sufijo', 'tipo_de_sala', 'genero', 'autocompletamos_edad', 'fila', 'nombre_sede']]
-    encoder = OneHotEncoder(drop='first',sparse=False )
-    encoder.fit(datos_a_codificar)
-    datos_codificados = encoder.transform(datos_a_codificar)
-
-    datos_numericos = df_procesado[['edad','amigos','parientes','precio_ticket']]
-
-    datos_juntos = np.hstack((np.array(datos_numericos), datos_codificados))
-    datos_juntos_normalizados = (datos_juntos - datos_juntos.mean())/datos_juntos.std()
-    return datos_juntos_normalizados
+    return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
