@@ -77,6 +77,13 @@ def conversionAVariablesNumericasNormalizadas(fiumark_procesado_df):
     datos_juntos = np.hstack((np.array(datos_numericos), datos_codificados))
     return normalizar(datos_juntos)
 
+def conversionAVariablesNumericas(fiumark_procesado_df):
+    df_procesado = fiumark_procesado_df.drop(columns=['nombre'])
+    datos_a_codificar = df_procesado[['sufijo', 'tipo_de_sala', 'genero', 'autocompletamos_edad', 'fila', 'nombre_sede']]
+    datos_codificados = codificacionOneHot(datos_a_codificar)
+    datos_numericos = df_procesado[['edad', 'amigos', 'parientes', 'precio_ticket']]
+    datos_juntos = np.hstack((np.array(datos_numericos), datos_codificados))
+    return datos_juntos
 
 ################ PREPROCESSING ################
 
@@ -90,23 +97,26 @@ def categoricalNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
 
     return codificacionOrdinal(df_procesado)
 
-
 def multinomialNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de NB multinomial.
     Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-
     df_procesado = fiumark_procesado_df.drop(columns=['nombre', 'edad', 'id_ticket', 'autocompletamos_edad'])
 
     return codificacionOrdinal(df_procesado)
 
-
 def gaussianNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de NB gaussiano.
     Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-
     df_procesado = fiumark_procesado_df[['edad','precio_ticket','autocompletamos_edad']]
 
     return np.array(df_procesado)
+
+def arbolDeDecisionPreprocessing(fiumark_procesado_df: pd.DataFrame):
+    """Preparara y dejara listo para usar un dataframe en el modelo de arbol de decision.
+        Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+    df_procesado = fiumark_procesado_df.drop(columns=['id_ticket'])
+
+    return conversionAVariablesNumericas(df_procesado)
 
 def knnPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de KNN.
@@ -115,5 +125,15 @@ def knnPreprocessing(fiumark_procesado_df: pd.DataFrame):
 
 def svmPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de SVM.
+    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+    return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
+
+def rlPreprocessing(fiumark_procesado_df: pd.DataFrame):
+    """Preparara y dejara listo para usar un dataframe en el modelo de Regresion Logistica.
+    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+    return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
+
+def rfPreprocessing(fiumark_procesado_df: pd.DataFrame):
+    """Preparara y dejara listo para usar un dataframe en el modelo de Random Forest.
     Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
     return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
