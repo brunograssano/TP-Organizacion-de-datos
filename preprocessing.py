@@ -3,11 +3,14 @@ import numpy as np
 from sklearn.preprocessing import OrdinalEncoder
 from sklearn.preprocessing import OneHotEncoder
 
-def prepararSetDeDatos(info_fiumark_df: pd.DataFrame, usuario_volveria_df: pd.DataFrame):
-    """Realiza la limpieza y preparacion investigada durante el TP1"""
+def prepararSetDeValidacion(usuario_volveria_df: pd.DataFrame):
     # Trabajo con el target
     usuario_volveria_df['volveria'] = usuario_volveria_df['volveria'].astype(np.int8)
     usuario_volveria_df.drop(columns='id_usuario', inplace=True)
+    return usuario_volveria_df
+
+def prepararSetDeDatos(info_fiumark_df: pd.DataFrame):
+    """Realiza la limpieza y preparacion investigada durante el TP1"""
 
     # Feature Engineering
     info_fiumark_df['edad'] = info_fiumark_df['edad'].apply(np.floor)
@@ -53,7 +56,7 @@ def prepararSetDeDatos(info_fiumark_df: pd.DataFrame, usuario_volveria_df: pd.Da
 
     info_fiumark_df.drop(columns=['id_usuario'], inplace=True)
 
-    return info_fiumark_df, usuario_volveria_df
+    return info_fiumark_df
 
 
 ################ AUXILIARES ################
@@ -125,6 +128,12 @@ def knnPreprocessing(fiumark_procesado_df: pd.DataFrame):
 
 def svmPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de SVM.
+    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+    return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
+
+
+def redesNeuronalesPreprocessing(fiumark_procesado_df: pd.DataFrame):
+    """Preparara y dejara listo para usar un dataframe en los modelos de redes neuronales.
     Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
     return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
 
