@@ -73,11 +73,7 @@ def normalizar(datos_juntos):
     return (datos_juntos - datos_juntos.mean()) / datos_juntos.std()
 
 def conversionAVariablesNumericasNormalizadas(fiumark_procesado_df):
-    df_procesado = fiumark_procesado_df.drop(columns=['nombre'])
-    datos_a_codificar = df_procesado[['sufijo', 'tipo_de_sala', 'genero', 'autocompletamos_edad', 'fila', 'nombre_sede']]
-    datos_codificados = codificacionOneHot(datos_a_codificar)
-    datos_numericos = df_procesado[['edad', 'amigos', 'parientes', 'precio_ticket']]
-    datos_juntos = np.hstack((np.array(datos_numericos), datos_codificados))
+    datos_juntos = conversionAVariablesNumericas(fiumark_procesado_df)
     return normalizar(datos_juntos)
 
 def conversionAVariablesNumericas(fiumark_procesado_df):
