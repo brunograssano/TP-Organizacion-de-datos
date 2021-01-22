@@ -6,17 +6,21 @@ from sklearn.metrics import roc_auc_score
 from sklearn.metrics import roc_curve
 from sklearn.metrics import confusion_matrix
 
-def mostrarROCCurve(modelo,nombreModelo,X_test,y_test):
+def mostrarROCCurve(modelo,nombreModelo,X_test, X_train, y_test, y_train):
     fpr_test, tpr_test, thresholds_test = roc_curve(y_test, modelo.predict_proba(X_test)[:, 1])
+    fpr_train, tpr_train, thresholds_train = roc_curve(y_train, modelo.predict_proba(X_train)[:, 1])
 
     zero_test = np.argmin(np.abs(thresholds_test))
+    zero_train = np.argmin(np.abs(thresholds_train))
 
     plt.plot(fpr_test, tpr_test, label="ROC Curve "+nombreModelo+" Test")
+    plt.plot(fpr_train, tpr_train, label="ROC Curve  " + nombreModelo + " Train")
     plt.xlabel("FPR")
     plt.ylabel("TPR")
     plt.plot(fpr_test[zero_test], tpr_test[zero_test], 'o', markersize=10, label="threshold zero test",
              fillstyle="none", c="k", mew=2)
-
+    plt.plot(fpr_train[zero_train], tpr_train[zero_train], 'x', markersize=10, label="threshold zero train",
+             fillstyle="none", c="k", mew=2)
     plt.legend(loc=4)
     plt.show()
 
