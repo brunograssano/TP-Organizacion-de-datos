@@ -67,22 +67,25 @@ def codificacionOrdinal(datos_a_codificar):
 
 def codificacionOneHot(datos_a_codificar):
     encoder = OneHotEncoder(drop='first', sparse=False)
-    return encoder.fit_transform(datos_a_codificar)
+    datos_codificados = encoder.fit_transform(datos_a_codificar)
+    nombres_de_los_features = encoder.get_feature_names(datos_a_codificar.columns)
+    return datos_codificados, nombres_de_los_features
 
 def normalizar(datos_juntos):
     return (datos_juntos - datos_juntos.mean()) / datos_juntos.std()
 
 def conversionAVariablesNumericasNormalizadas(fiumark_procesado_df):
-    datos_juntos = conversionAVariablesNumericas(fiumark_procesado_df)
+    nombres_de_los_features, datos_juntos = conversionAVariablesNumericas(fiumark_procesado_df)
     return normalizar(datos_juntos)
 
 def conversionAVariablesNumericas(fiumark_procesado_df):
     df_procesado = fiumark_procesado_df.drop(columns=['nombre'])
     datos_a_codificar = df_procesado[['sufijo', 'tipo_de_sala', 'genero', 'autocompletamos_edad', 'fila', 'nombre_sede']]
-    datos_codificados = codificacionOneHot(datos_a_codificar)
+    datos_codificados, nombres_de_los_features_codificados = codificacionOneHot(datos_a_codificar)
     datos_numericos = df_procesado[['edad', 'amigos', 'parientes', 'precio_ticket']]
     datos_juntos = np.hstack((np.array(datos_numericos), datos_codificados))
-    return datos_juntos
+    nombres_de_los_features = ['edad', 'amigos', 'parientes', 'precio_ticket'] + nombres_de_los_features_codificados.tolist()
+    return nombres_de_los_features, datos_juntos
 
 ################ PREPROCESSING ################
 
@@ -115,7 +118,8 @@ def arbolDeDecisionPreprocessing(fiumark_procesado_df: pd.DataFrame):
         Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
     df_procesado = fiumark_procesado_df.drop(columns=['id_ticket'])
 
-    return conversionAVariablesNumericas(df_procesado)
+    nombres_de_los_features, datos_juntos = conversionAVariablesNumericas(df_procesado)
+    return nombres_de_los_features, datos_juntos
 
 def knnPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de KNN.
