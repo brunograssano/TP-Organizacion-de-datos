@@ -7,7 +7,7 @@ def prepararSetDeValidacion(usuario_volveria_df: pd.DataFrame):
     # Trabajo con el target
     usuario_volveria_df['volveria'] = usuario_volveria_df['volveria'].astype(np.int8)
     usuario_volveria_df.drop(columns='id_usuario', inplace=True)
-    return usuario_volveria_df
+    return np.array(usuario_volveria_df).ravel()
 
 def prepararSetDeDatos(info_fiumark_df: pd.DataFrame):
     """Realiza la limpieza y preparacion investigada durante el TP1"""
