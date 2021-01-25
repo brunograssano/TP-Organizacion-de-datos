@@ -54,10 +54,14 @@ def prepararSetDeDatos(info_fiumark_df: pd.DataFrame):
     info_fiumark_df["fila"] = info_fiumark_df["fila"].astype("category")
     info_fiumark_df["sufijo"] = info_fiumark_df["sufijo"].astype("category")
 
-    info_fiumark_df.drop(columns=['id_usuario'], inplace=True)
+    info_fiumark_df.drop(columns=['id_usuario', 'nombre', 'id_ticket'], inplace=True)
 
     return info_fiumark_df
 
+def prepararSetDeHoldout(holdout_df: pd.DataFrame):
+    holdout_df = prepararSetDeDatos(holdout_df)
+    holdout_df["fila"].replace(to_replace="atras", value="No responde", inplace=True)
+    return holdout_df
 
 ################ AUXILIARES ################
 
@@ -79,10 +83,9 @@ def conversionAVariablesNumericasNormalizadas(fiumark_procesado_df):
     return normalizar(datos_juntos)
 
 def conversionAVariablesNumericas(fiumark_procesado_df):
-    df_procesado = fiumark_procesado_df.drop(columns=['nombre'])
-    datos_a_codificar = df_procesado[['sufijo', 'tipo_de_sala', 'genero', 'autocompletamos_edad', 'fila', 'nombre_sede']]
+    datos_a_codificar = fiumark_procesado_df[['sufijo', 'tipo_de_sala', 'genero', 'autocompletamos_edad', 'fila', 'nombre_sede']]
     datos_codificados, nombres_de_los_features_codificados = codificacionOneHot(datos_a_codificar)
-    datos_numericos = df_procesado[['edad', 'amigos', 'parientes', 'precio_ticket']]
+    datos_numericos = fiumark_procesado_df[['edad', 'amigos', 'parientes', 'precio_ticket']]
     datos_juntos = np.hstack((np.array(datos_numericos), datos_codificados))
     nombres_de_los_features = ['edad', 'amigos', 'parientes', 'precio_ticket'] + nombres_de_los_features_codificados.tolist()
     return nombres_de_los_features, datos_juntos
@@ -93,7 +96,7 @@ def categoricalNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de NB categorico.
     Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
 
-    df_procesado = fiumark_procesado_df.drop(columns=['nombre', 'edad', 'precio_ticket', 'id_ticket', 'autocompletamos_edad'])
+    df_procesado = fiumark_procesado_df.drop(columns=['edad', 'precio_ticket', 'autocompletamos_edad'])
     # Sacamos estas columnas, ya que no tiene sentido calcular la probabilidad de cada una de ellas.
     # Por ejemplo, cual es la probabilidad de que te llames de tal forma.
 
@@ -102,7 +105,7 @@ def categoricalNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
 def multinomialNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de NB multinomial.
     Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    df_procesado = fiumark_procesado_df.drop(columns=['nombre', 'edad', 'id_ticket', 'autocompletamos_edad'])
+    df_procesado = fiumark_procesado_df.drop(columns=['edad', 'autocompletamos_edad'])
 
     return codificacionOrdinal(df_procesado)
 
@@ -116,9 +119,7 @@ def gaussianNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
 def arbolDeDecisionPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de arbol de decision.
         Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    df_procesado = fiumark_procesado_df.drop(columns=['id_ticket'])
-
-    nombres_de_los_features, datos_juntos = conversionAVariablesNumericas(df_procesado)
+    nombres_de_los_features, datos_juntos = conversionAVariablesNumericas(fiumark_procesado_df)
     return nombres_de_los_features, datos_juntos
 
 def knnPreprocessing(fiumark_procesado_df: pd.DataFrame):
@@ -144,5 +145,16 @@ def rlPreprocessing(fiumark_procesado_df: pd.DataFrame):
 
 def rfPreprocessing(fiumark_procesado_df: pd.DataFrame):
     """Preparara y dejara listo para usar un dataframe en el modelo de Random Forest.
+    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+    return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
+
+def boostingPreprocessing(fiumark_procesado_df: pd.DataFrame):
+    """Preparara y dejara listo para usar un dataframe en el modelo de boosting.
+        Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+    nombres_de_los_features, datos_juntos = conversionAVariablesNumericas(fiumark_procesado_df)
+    return datos_juntos
+
+def votingPreprocessing(fiumark_procesado_df: pd.DataFrame):
+    """Preparara y dejara listo para usar un dataframe en el modelo de Voting.
     Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
     return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
