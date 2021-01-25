@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="genero_mujer <= 0.5\ngini = 0.47\nsamples = 600\nvalue = [373, 227]\nclass = No Volveria"] ;
+1 [label="fila_adelante <= 0.5\ngini = 0.305\nsamples = 388\nvalue = [315, 73]\nclass = No Volveria"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="edad <= 8.5\ngini = 0.246\nsamples = 328\nvalue = [281, 47]\nclass = No Volveria"] ;
+1 -> 2 ;
+3 [label="gini = 0.408\nsamples = 14\nvalue = [4, 10]\nclass = Volveria"] ;
+2 -> 3 ;
+4 [label="gini = 0.208\nsamples = 314\nvalue = [277, 37]\nclass = No Volveria"] ;
+2 -> 4 ;
+5 [label="edad <= 46.5\ngini = 0.491\nsamples = 60\nvalue = [34, 26]\nclass = No Volveria"] ;
+1 -> 5 ;
+6 [label="gini = 0.499\nsamples = 38\nvalue = [18, 20]\nclass = Volveria"] ;
+5 -> 6 ;
+7 [label="gini = 0.397\nsamples = 22\nvalue = [16, 6]\nclass = No Volveria"] ;
+5 -> 7 ;
+8 [label="tipo_de_sala_4d <= 0.5\ngini = 0.397\nsamples = 212\nvalue = [58, 154]\nclass = Volveria"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="precio_ticket <= 3.5\ngini = 0.099\nsamples = 115\nvalue = [6, 109]\nclass = Volveria"] ;
+8 -> 9 ;
+10 [label="gini = 0.174\nsamples = 52\nvalue = [5, 47]\nclass = Volveria"] ;
+9 -> 10 ;
+11 [label="gini = 0.031\nsamples = 63\nvalue = [1, 62]\nclass = Volveria"] ;
+9 -> 11 ;
+12 [label="nombre_sede_fiumark_palermo <= 0.5\ngini = 0.497\nsamples = 97\nvalue = [52, 45]\nclass = No Volveria"] ;
+8 -> 12 ;
+13 [label="gini = 0.408\nsamples = 35\nvalue = [10, 25]\nclass = Volveria"] ;
+12 -> 13 ;
+14 [label="gini = 0.437\nsamples = 62\nvalue = [42, 20]\nclass = No Volveria"] ;
+12 -> 14 ;
+}
