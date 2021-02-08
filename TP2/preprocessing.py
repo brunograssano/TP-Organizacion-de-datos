@@ -3,14 +3,17 @@ import numpy as np
 from sklearn.preprocessing import OrdinalEncoder
 from sklearn.preprocessing import OneHotEncoder
 
+################ CONFIGURACIONES INICIALES ################
+
 def prepararSetDeValidacion(usuario_volveria_df: pd.DataFrame):
-    # Trabajo con el target
+    """ Trabajo con el target, se lo deja listo para ser usado en los modelos."""
+
     usuario_volveria_df['volveria'] = usuario_volveria_df['volveria'].astype(np.int8)
     usuario_volveria_df.drop(columns='id_usuario', inplace=True)
     return np.array(usuario_volveria_df).ravel()
 
 def prepararSetDeDatos(info_fiumark_df: pd.DataFrame):
-    """Realiza la limpieza y preparacion investigada durante el TP1"""
+    """ Realiza la limpieza y preparacion investigada durante el TP1 """
 
     # Feature Engineering
     info_fiumark_df['edad'] = info_fiumark_df['edad'].apply(np.floor)
@@ -59,6 +62,9 @@ def prepararSetDeDatos(info_fiumark_df: pd.DataFrame):
     return info_fiumark_df
 
 def prepararSetDeHoldout(holdout_df: pd.DataFrame):
+    """ Prepara el set de holdout remplazando el valor que no se encuentra en el entrenamiento (atras) por un 'No responde'.
+        Esto se debe a que no se tiene informacion de este caso."""
+
     holdout_df = prepararSetDeDatos(holdout_df)
     holdout_df["fila"].replace(to_replace="atras", value="No responde", inplace=True)
     return holdout_df
@@ -66,7 +72,7 @@ def prepararSetDeHoldout(holdout_df: pd.DataFrame):
 ################ AUXILIARES ################
 
 def codificacionOrdinal(datos_a_codificar):
-    encoder = OrdinalEncoder() # TODO USAR FIT TRANSFORM
+    encoder = OrdinalEncoder()
     return encoder.fit_transform(datos_a_codificar)
 
 def codificacionOneHot(datos_a_codificar):
@@ -78,11 +84,21 @@ def codificacionOneHot(datos_a_codificar):
 def normalizar(datos_juntos):
     return (datos_juntos - datos_juntos.mean()) / datos_juntos.std()
 
+################ PREPROCESSING ################
+
 def conversionAVariablesNumericasNormalizadas(fiumark_procesado_df):
+    """ Necesita que el dataset fiumark ya venga preprocesado por la funcion prepararSetDeDatos (aplica las transformaciones del TP1)
+        Convertira todas las variables a valores numericos para que puedan ser usados en los modelos. Una vez hecho eso, los normalizara."""
+
     nombres_de_los_features, datos_juntos = conversionAVariablesNumericas(fiumark_procesado_df)
     return normalizar(datos_juntos)
 
 def conversionAVariablesNumericas(fiumark_procesado_df):
+    """ Necesita que el dataset fiumark ya venga preprocesado por la funcion prepararSetDeDatos (aplica las transformaciones del TP1)
+        Si se cumple la precondicion, se encargara de dejar de forma numerica todas las features.
+        Los valores categoricos seran convertidos mediante OneHotEncoding.
+        Al momento de devolverlos, lo hace junto a los nombres de los features, por si se quiere recuperar luego el DataFrame."""
+
     datos_a_codificar = fiumark_procesado_df[['sufijo', 'tipo_de_sala', 'genero', 'autocompletamos_edad', 'fila', 'nombre_sede']]
     datos_codificados, nombres_de_los_features_codificados = codificacionOneHot(datos_a_codificar)
     datos_numericos = fiumark_procesado_df[['edad', 'amigos', 'parientes', 'precio_ticket']]
@@ -90,71 +106,28 @@ def conversionAVariablesNumericas(fiumark_procesado_df):
     nombres_de_los_features = ['edad', 'amigos', 'parientes', 'precio_ticket'] + nombres_de_los_features_codificados.tolist()
     return nombres_de_los_features, datos_juntos
 
-################ PREPROCESSING ################
-
-def categoricalNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
-    """Preparara y dejara listo para usar un dataframe en el modelo de NB categorico.
-    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+def conversionAVariablesCategoricasCodificadas(fiumark_procesado_df: pd.DataFrame):
+    """ Necesita que el dataset fiumark ya venga preprocesado por la funcion prepararSetDeDatos (aplica las transformaciones del TP1).
+        Si se cumple, la funcion se encargara de dejar solamente las variables categoricas. Estas se convierten mediante una codificacion ordinal."""
 
     df_procesado = fiumark_procesado_df.drop(columns=['edad', 'precio_ticket', 'autocompletamos_edad'])
     # Sacamos estas columnas, ya que no tiene sentido calcular la probabilidad de cada una de ellas.
-    # Por ejemplo, cual es la probabilidad de que te llames de tal forma.
+    # Por ejemplo, cual es la probabilidad de que tu edad sea X.
 
     return codificacionOrdinal(df_procesado)
 
-def multinomialNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
-    """Preparara y dejara listo para usar un dataframe en el modelo de NB multinomial.
-    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+def conversionAVariablesDiscretasCodificadas(fiumark_procesado_df: pd.DataFrame):
+    """ Necesita que el dataset fiumark ya venga preprocesado por la funcion prepararSetDeDatos (aplica las transformaciones del TP1).
+        Si se cumple, la funcion se encargara de dejar solamente las variables discretas. Estas se convierten mediante una codificacion ordinal."""
+
     df_procesado = fiumark_procesado_df.drop(columns=['edad', 'autocompletamos_edad'])
 
     return codificacionOrdinal(df_procesado)
 
-def gaussianNBPreprocessing(fiumark_procesado_df: pd.DataFrame):
-    """Preparara y dejara listo para usar un dataframe en el modelo de NB gaussiano.
-    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
+def conversionAVariablesContinuas(fiumark_procesado_df: pd.DataFrame):
+    """ Necesita que el dataset fiumark ya venga preprocesado por la funcion prepararSetDeDatos (aplica las transformaciones del TP1).
+        Si se cumple, la funcion se encargara de dejar solamente las variables continuas. Estas seran devueltas en un array."""
+
     df_procesado = fiumark_procesado_df[['edad','precio_ticket','autocompletamos_edad']]
 
     return np.array(df_procesado)
-
-def arbolDeDecisionPreprocessing(fiumark_procesado_df: pd.DataFrame):
-    """Preparara y dejara listo para usar un dataframe en el modelo de arbol de decision.
-        Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    nombres_de_los_features, datos_juntos = conversionAVariablesNumericas(fiumark_procesado_df)
-    return nombres_de_los_features, datos_juntos
-
-def knnPreprocessing(fiumark_procesado_df: pd.DataFrame):
-    """Preparara y dejara listo para usar un dataframe en el modelo de KNN.
-    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
-
-def svmPreprocessing(fiumark_procesado_df: pd.DataFrame):
-    """Preparara y dejara listo para usar un dataframe en el modelo de SVM.
-    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
-
-
-def redesNeuronalesPreprocessing(fiumark_procesado_df: pd.DataFrame):
-    """Preparara y dejara listo para usar un dataframe en los modelos de redes neuronales.
-    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
-
-def rlPreprocessing(fiumark_procesado_df: pd.DataFrame):
-    """Preparara y dejara listo para usar un dataframe en el modelo de Regresion Logistica.
-    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
-
-def rfPreprocessing(fiumark_procesado_df: pd.DataFrame):
-    """Preparara y dejara listo para usar un dataframe en el modelo de Random Forest.
-    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)
-
-def boostingPreprocessing(fiumark_procesado_df: pd.DataFrame):
-    """Preparara y dejara listo para usar un dataframe en el modelo de boosting.
-        Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    nombres_de_los_features, datos_juntos = conversionAVariablesNumericas(fiumark_procesado_df)
-    return datos_juntos
-
-def votingPreprocessing(fiumark_procesado_df: pd.DataFrame):
-    """Preparara y dejara listo para usar un dataframe en el modelo de Voting.
-    Necesita que venga ya preprocesado anteriormente por la funcion del TP1"""
-    return conversionAVariablesNumericasNormalizadas(fiumark_procesado_df)

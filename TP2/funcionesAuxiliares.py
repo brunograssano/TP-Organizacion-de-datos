@@ -39,7 +39,7 @@ def mostrarAUCScore(modelo,nombreModelo,X_test,y_test):
     print("AUC para "+nombreModelo+": {:.3f}".format(auc_score))
 
 def escribirPrediccionesAArchivo(predicciones : np.array,nombreModelo):
-    archivo = open("Predicciones holdout/"+nombreModelo+".csv", "w")
+    archivo = open("PrediccionesHoldout/"+nombreModelo+".csv", "w")
     for prediccion in predicciones:
         archivo.write(str(prediccion) + "\n")
     archivo.close()
