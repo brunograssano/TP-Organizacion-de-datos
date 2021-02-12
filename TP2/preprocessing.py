@@ -157,21 +157,11 @@ def conversionAVariablesNumericas(fiumark_procesado_df,columnas_codificables_ext
     nombres_de_los_features = columnas_numericas + nombres_de_los_features_codificados.tolist()
     return nombres_de_los_features, datos_juntos
 
-def conversionAVariablesCategoricasCodificadas(fiumark_procesado_df: pd.DataFrame):
+def conversionAVariablesCodificadas(fiumark_procesado_df: pd.DataFrame, columnasConLasQueNosQuedamos = [] ):
     """ Necesita que el dataset fiumark ya venga preprocesado por la funcion prepararSetDeDatos (aplica las transformaciones del TP1).
-        Si se cumple, la funcion se encargara de dejar solamente las variables categoricas. Estas se convierten mediante una codificacion ordinal."""
+        Si se cumple, la funcion se encargara de dejar solamente las variables indicadas. Estas se convierten mediante una codificacion ordinal."""
 
-    df_procesado = fiumark_procesado_df.drop(columns=['edad', 'precio_ticket', 'autocompletamos_edad'])
-    # Sacamos estas columnas, ya que no tiene sentido calcular la probabilidad de cada una de ellas.
-    # Por ejemplo, cual es la probabilidad de que tu edad sea X.
-
-    return codificacionOrdinal(df_procesado)
-
-def conversionAVariablesDiscretasCodificadas(fiumark_procesado_df: pd.DataFrame):
-    """ Necesita que el dataset fiumark ya venga preprocesado por la funcion prepararSetDeDatos (aplica las transformaciones del TP1).
-        Si se cumple, la funcion se encargara de dejar solamente las variables discretas. Estas se convierten mediante una codificacion ordinal."""
-
-    df_procesado = fiumark_procesado_df.drop(columns=['edad', 'autocompletamos_edad'])
+    df_procesado = fiumark_procesado_df[columnasConLasQueNosQuedamos]
 
     return codificacionOrdinal(df_procesado)
 
