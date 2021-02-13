@@ -134,7 +134,7 @@ def expansionDelDataset(info_fiumark_df: pd.DataFrame):
 
 
 
-def conversionAVariablesNumericasNormalizadas(fiumark_procesado_df,columnas_codificables_extra = [],columnas_numericas_extra = []):
+def conversionAVariablesNormalizadas(fiumark_procesado_df,columnas_codificables_extra = [],columnas_numericas_extra = []):
     """ Necesita que el dataset fiumark ya venga preprocesado por la funcion prepararSetDeDatos (aplica las transformaciones del TP1)
         Convertira todas las variables a valores numericos para que puedan ser usados en los modelos. Una vez hecho eso, los normalizara."""
 
