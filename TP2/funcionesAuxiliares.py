@@ -50,8 +50,11 @@ def mostrarAUCScore(modelo,nombreModelo,X_test,y_test):
     auc_score = roc_auc_score(y_test, modelo.predict_proba(X_test)[:, 1])
     print("AUC para "+nombreModelo+": {:.3f}".format(auc_score))
 
-def escribirPrediccionesAArchivo(predicciones : np.array,nombreModelo):
+def escribirPrediccionesAArchivo(predicciones : np.array,nombreModelo,ids_usuarios):
     archivo = open("PrediccionesHoldout/"+nombreModelo+".csv", "w")
+    archivo.write("id_usuario,volveria\n")
+    i = 0
     for prediccion in predicciones:
-        archivo.write(str(prediccion) + "\n")
+        archivo.write(str(ids_usuarios[i])+ "," + str(prediccion) + "\n")
+        i = i + 1
     archivo.close()
