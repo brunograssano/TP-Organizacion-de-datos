@@ -16,51 +16,73 @@ def prepararSetDeValidacion(usuario_volveria_df: pd.DataFrame):
 def prepararSetDeDatos(info_fiumark_df: pd.DataFrame):
     """ Realiza la limpieza y preparacion investigada durante el TP1 """
 
-    # Feature Engineering
-    info_fiumark_df['edad'] = info_fiumark_df['edad'].apply(np.floor)
+    info_fiumark_df = prepararDatosExistentes(info_fiumark_df)
+    completarValoresNulos(info_fiumark_df)
+    conversionDeTipos(info_fiumark_df)
+    info_fiumark_df.drop(columns=['id_usuario', 'nombre', 'id_ticket'], inplace=True)
 
-    sufijos_y_nombres = info_fiumark_df.nombre.str.split(pat=' ', n=1, expand=True)
-    sufijos_y_nombres.columns = ['sufijo', 'nombre']
-    info_fiumark_df.drop('nombre', axis=1, inplace=True)
-    info_fiumark_df = pd.concat([sufijos_y_nombres, info_fiumark_df], axis='columns')
+    return info_fiumark_df
 
-    # Trabajo con valores nulos
-    sede_mas_frecuente = info_fiumark_df['nombre_sede'].value_counts().index[0]
-    info_fiumark_df['nombre_sede'].fillna(sede_mas_frecuente, inplace=True)
 
-    info_fiumark_df['fila'].fillna("No responde", inplace=True)
-
-    mediana_edad_senioras = info_fiumark_df[info_fiumark_df['sufijo'] == 'Señora'].edad.dropna().median()
-    mediana_edad_senioritas = info_fiumark_df[info_fiumark_df['sufijo'] == 'Señorita'].edad.dropna().median()
-
-    info_fiumark_df['autocompletamos_edad'] = False
-
-    info_fiumark_df.loc[
-        (info_fiumark_df['sufijo'] == 'Señora') & (info_fiumark_df['edad'].isnull()), 'autocompletamos_edad'] = True
-    info_fiumark_df.loc[
-        (info_fiumark_df['sufijo'] == 'Señorita') & (info_fiumark_df['edad'].isnull()), 'autocompletamos_edad'] = True
-    info_fiumark_df.loc[info_fiumark_df['sufijo'] == 'Señorita', 'edad'] = info_fiumark_df.loc[
-        info_fiumark_df['sufijo'] == 'Señorita', 'edad'].fillna(mediana_edad_senioritas)
-    info_fiumark_df.loc[info_fiumark_df['sufijo'] == 'Señora', 'edad'] = info_fiumark_df.loc[
-        info_fiumark_df['sufijo'] == 'Señora', 'edad'].fillna(mediana_edad_senioras)
-
-    mediana_edad_senior = info_fiumark_df[info_fiumark_df['sufijo'] == 'Señor'].edad.dropna().median()
-
-    info_fiumark_df.loc[
-        (info_fiumark_df['sufijo'] == 'Señor') & (info_fiumark_df['edad'].isnull()), 'autocompletamos_edad'] = True
-    info_fiumark_df.loc[info_fiumark_df['sufijo'] == 'Señor', 'edad'] = info_fiumark_df.loc[
-        info_fiumark_df['sufijo'] == 'Señor', 'edad'].fillna(mediana_edad_senior)
-
-    # Conversion de valores para ahorrar memoria
+def conversionDeTipos(info_fiumark_df):
+    """ Convierte columnas a un tipo de dato mas acorde."""
     info_fiumark_df["tipo_de_sala"] = info_fiumark_df["tipo_de_sala"].astype("category")
     info_fiumark_df["genero"] = info_fiumark_df["genero"].astype("category")
     info_fiumark_df["nombre_sede"] = info_fiumark_df["nombre_sede"].astype("category")
     info_fiumark_df["fila"] = info_fiumark_df["fila"].astype("category")
     info_fiumark_df["sufijo"] = info_fiumark_df["sufijo"].astype("category")
 
-    info_fiumark_df.drop(columns=['id_usuario', 'nombre', 'id_ticket'], inplace=True)
 
+def completarValoresNulos(info_fiumark_df):
+    completarSedeDelCine(info_fiumark_df)
+    info_fiumark_df['fila'].fillna("No responde", inplace=True)
+    completarEdades(info_fiumark_df)
+
+
+def completarEdades(info_fiumark_df):
+    info_fiumark_df['autocompletamos_edad'] = False
+
+    completarMujeres(info_fiumark_df)
+    completarHombres(info_fiumark_df)
+
+
+def completarHombres(info_fiumark_df):
+    medianaEdadSenior = info_fiumark_df[info_fiumark_df['sufijo'] == 'Señor'].edad.dropna().median()
+    esSenior = info_fiumark_df['sufijo'] == 'Señor'
+    sinEdad = info_fiumark_df['edad'].isnull()
+    info_fiumark_df.loc[esSenior & sinEdad, 'autocompletamos_edad'] = True
+    info_fiumark_df.loc[esSenior, 'edad'] = info_fiumark_df.loc[esSenior, 'edad'].fillna(medianaEdadSenior)
+
+
+def completarMujeres(info_fiumark_df):
+    medianaEdadSenioras = info_fiumark_df[info_fiumark_df['sufijo'] == 'Señora'].edad.dropna().median()
+    medianaEdadSenioritas = info_fiumark_df[info_fiumark_df['sufijo'] == 'Señorita'].edad.dropna().median()
+    esSeniora = info_fiumark_df['sufijo'] == 'Señora'
+    esSeniorita = info_fiumark_df['sufijo'] == 'Señorita'
+    sinEdad = info_fiumark_df['edad'].isnull()
+
+    info_fiumark_df.loc[esSeniora & sinEdad, 'autocompletamos_edad'] = True
+    info_fiumark_df.loc[esSeniorita & sinEdad, 'autocompletamos_edad'] = True
+
+    info_fiumark_df.loc[esSeniorita, 'edad'] = info_fiumark_df.loc[esSeniorita, 'edad'].fillna(medianaEdadSenioritas)
+    info_fiumark_df.loc[esSeniora, 'edad'] = info_fiumark_df.loc[esSeniora, 'edad'].fillna(medianaEdadSenioras)
+
+
+def completarSedeDelCine(info_fiumark_df):
+    sede_mas_frecuente = info_fiumark_df['nombre_sede'].value_counts().index[0]
+    info_fiumark_df['nombre_sede'].fillna(sede_mas_frecuente, inplace=True)
+
+
+def prepararDatosExistentes(info_fiumark_df):
+    info_fiumark_df['edad'] = info_fiumark_df['edad'].apply(np.floor)
+
+    sufijos_y_nombres = info_fiumark_df.nombre.str.split(pat=' ', n=1, expand=True)
+    sufijos_y_nombres.columns = ['sufijo', 'nombre']
+    info_fiumark_df.drop('nombre', axis=1, inplace=True)
+
+    info_fiumark_df = pd.concat([sufijos_y_nombres, info_fiumark_df], axis='columns')
     return info_fiumark_df
+
 
 def prepararSetDeHoldout(holdout_df: pd.DataFrame):
     """ Prepara el set de holdout remplazando el valor que no se encuentra en el entrenamiento (atras) por un 'No responde'.
@@ -112,9 +134,9 @@ def categorizar_invitados(cantidad_invitados):
 ################ PREPROCESSING ################
 
 def expansionDelDataset(info_fiumark_df: pd.DataFrame):
-    """
+    """ Creara varias nuevas features a partir del dataframe original. Este dataframe debe de venir preproceado previamente por
+        prepararSetDeDatos. """
 
-    """
     nombres, fiumark_numerico = conversionAVariablesNumericas(info_fiumark_df)
     info_fiumark_df['2_clusters'] = KMeans(n_clusters=2, random_state=0).fit_predict(fiumark_numerico)
     info_fiumark_df['4_clusters'] = KMeans(n_clusters=4, random_state=0).fit_predict(fiumark_numerico)
@@ -136,7 +158,8 @@ def expansionDelDataset(info_fiumark_df: pd.DataFrame):
 
 def conversionAVariablesNormalizadas(fiumark_procesado_df,columnas_codificables_extra = [],columnas_numericas_extra = []):
     """ Necesita que el dataset fiumark ya venga preprocesado por la funcion prepararSetDeDatos (aplica las transformaciones del TP1)
-        Convertira todas las variables a valores numericos para que puedan ser usados en los modelos. Una vez hecho eso, los normalizara."""
+        Convertira todas las variables a valores numericos para que puedan ser usados en los modelos. Una vez hecho eso, los normalizara.
+        Devuelve solamente los datos. Si se quieren los nombres  de los features se deben de llamar separadas las funciones."""
 
     nombres_de_los_features, datos_juntos = conversionAVariablesNumericas(fiumark_procesado_df,columnas_codificables_extra,columnas_numericas_extra)
     return normalizar(datos_juntos)
