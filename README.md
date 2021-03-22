@@ -12,3 +12,4 @@ Cátedra Collinet - FIUBA
 
 Cada TP tiene su lista de requerimientos para poder ser ejecutados sin problemas. Ambos trabajos practicos fueron realizados en Jupyter Notebook y Python.
 
+Los notebooks ejecutados se pueden ver [aqui](https://brunograssano.github.io/TP-Organizacion-de-datos/).
